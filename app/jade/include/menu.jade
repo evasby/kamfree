@@ -1,0 +1,11 @@
+//Nav Menu
+//-Hide comment
+ul
+	- each val in ['menu1', 'menu2', 'menu3']
+		li=val
+ul
+	- each val, index in ['menu1', 'menu2', 'menu3']
+		li=index + ': ' + val
+ul
+	- each val, index in {'item1':'menu1', 'item2':'menu2', 'item3':'menu3'}
+		li=index + ': ' + val

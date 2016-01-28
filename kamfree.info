@@ -1,0 +1,6 @@
+screenshot  = screenshot.png
+name        = kamfree theme
+description = Тема сайта kamfree
+core        = 7.x
+stylesheets[all][] = css/all.css
+stylesheets-conditional[lt IE 9][all][] = css/all-old-ie.css

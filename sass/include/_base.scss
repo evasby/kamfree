@@ -1,0 +1,88 @@
+//@import "../../app/bower_components/susy/sass/_susy.scss";
+// $susy: (
+//   columns: 12,
+//   gutters: 0,
+//   math: fluid,
+//   output: float,
+//   gutter-position: inside,
+//   flow: ltr,
+//   /*debug: (
+//     image: show,
+//     color: rgba(#66f, .5),
+//     output: background,
+//     toggle: top right,
+//   )*/
+// );
+// @include layout($susy);
+*{
+  box-sizing: border-box;
+}
+body{
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $fontColor;
+  //-webkit-font-smoothing: antialised;
+}
+.inner{
+  // @include container(320px);
+  // @include wide {
+  //   @include container(960px);
+  // }
+}
+a{
+
+}
+p{
+  
+}
+h1{
+
+}
+h2{
+
+}
+b, strong{
+  
+}
+
+.test{
+  //@include span(4 last);
+}
+textarea{
+  resize: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+input{
+  box-shadow: none;
+  border-radius: 0px;
+}
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+  box-shadow: none;
+}
+a, input, textarea{
+  &:focus{
+    outline: none;
+  }
+}
+::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  
+}
+:-moz-placeholder {
+  
+}
+::-moz-placeholder {
+  
+}
+:-ms-input-placeholder {
+  
+}
+::-ms-input-placeholder {
+  
+}
+:placeholder-shown {
+  
+}
+.hide{
+  display: none;
+}
