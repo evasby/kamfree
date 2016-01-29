@@ -1,3 +1,96 @@
 .menu{
-
+	background-color: #0c74bd;
+	//padding: 0 10px;
+	&_list{
+		font-family: $fontBold;
+		font-size: 16.3px;
+    text-align: justify;
+    text-transform: uppercase;
+    line-height: 0;
+    font-size: 1px;
+		@include old-ie{
+			*text-justify: newspaper;
+    	*zoom:1;
+		}
+    text-align-last: justify;
+    &:after{
+    	width: 100%;
+	    height: 0px;
+	    visibility: hidden;
+	    overflow: hidden;
+	    content: '';
+	    display: inline-block;
+    }
+    &__l2{
+			padding: 5px 0;
+			background-color: #0c74bd;
+			font-family: $font;
+			font-size: 12.6px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			visibility: hidden;
+			transform: translateY(-100%);
+			transition:
+        visibility 0s linear 200ms,
+        transform 200ms linear;
+      .menu_item:hover &{
+      	visibility: visible;
+      	transform: translateY(0);
+      	transition-delay: 0s;
+      }
+    }
+  }
+  &_inner{
+  		position: absolute;
+			z-index: 10;
+			top: 100%;
+			left: 0px;
+			width: 100%;
+			overflow: hidden;
+			visibility: hidden;
+  }
+  &_item{
+  	//background: #E76D13;
+    //width: 98px;
+    //height: 98px;
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    //border: 1px solid #000;
+    line-height: normal;
+    font-size: 16.3px;
+    vertical-align: top;
+    @include old-ie{
+    	*display : inline;
+    	*zoom : 1;
+  	}
+  }
+  &_link{
+  	display: inline-block;
+  	text-decoration: none;
+  	@include link(#fefefe, #fefefe);
+  	line-height: 2.1;
+  	border-top: 4px solid #0c74bd;
+  	border-bottom: 4px solid #0c74bd;
+  	padding: 0 12px;
+  	.menu_item:hover &{
+  		border-bottom: 4px solid #f0ad11;
+  	}
+  	@include old-ie{
+    	*display : inline;
+    	*zoom : 1;
+  	}
+  	&__l2{
+  		@include link(#fefefe, #030303);
+  		text-decoration: none;
+  		line-height: 2.1;
+  		display: block;
+  		padding-left: 22px;
+  		border-top: 1px solid #0b558a;
+  		.menu_item__l2:first-child &{
+  			border: none;
+  		}
+  	}
+  }
 }

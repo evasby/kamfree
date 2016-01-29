@@ -1,0 +1,45 @@
+.phone{
+	float: right;
+	padding-top: 3px;
+	color: #373736;
+	p{
+		font-size: 20px;
+		span{
+			font-family: $fontBold;
+			color: #0c74bd;
+			font-size: 24px;
+		}
+	}
+	&__footer{
+		color: #fefcfc;
+		p{
+			span{
+				color: #fefcfc;
+			}
+		}
+	}
+	&_button{
+		background-color: #fcc400;
+		font-family: $fontBold;
+		font-size: 16.5px;
+		line-height: 2.4;
+		@include link(#fefefe, #fefefe);
+		text-decoration: none;
+		display: block;
+		margin-top: 17px;
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 5px;
+		box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
+		&:hover{
+			background-color: #0c74bd;
+		}
+		&__footer{
+			background-color: #fefefe;
+			@include link(#424e5e, #fefefe);
+			&:hover{
+				background-color: #37414f;
+			}
+		}
+	}
+}

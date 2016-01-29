@@ -128,7 +128,7 @@ gulp.task('watch', function () {
   gulp.watch('sass/**/*.scss', ['css']);
   gulp.watch('bower.json', ['bower']);
   gulp.watch('app/index.html', ['html']);
-  gulp.watch('app/jade/**/*.jade', ['jade', 'jadephp']);
+  gulp.watch('app/jade/**/*.jade', ['jade']);
 });
 
 // default

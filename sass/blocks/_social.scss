@@ -1,0 +1,44 @@
+.social{
+	background-color: #37414f;
+	text-align: center;
+	padding: 14px 0 32px;
+	h1{
+		display: inline-block;
+		color: #fefefe;
+		font-family: $fontBold;
+		font-size: 22px;
+		text-transform: uppercase;
+		margin-right: 20px;
+	}
+	&_list{
+		display: inline-block;
+	}
+	&_item{
+		display: inline-block;
+	}
+	&_link{
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		position: relative;
+		top: 9px;
+		display: inline-block;
+		border-radius: 5px;
+		width: 33px;
+		height: 33px;
+		margin-right: 4px;
+		background: url('../images/social.png');
+		&__fb{
+			background-position: 0px 132px;
+		}
+		&__tt{
+			background-position: 0px 99px;
+		}
+		&__ok{
+			background-position: 0px 66px;
+		}
+		&__gg{
+			background-position: 0px 33px;
+		}
+	}
+}

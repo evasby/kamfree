@@ -1,11 +1,27 @@
-//Nav Menu
-//-Hide comment
-ul
-	- each val in ['menu1', 'menu2', 'menu3']
-		li=val
-ul
-	- each val, index in ['menu1', 'menu2', 'menu3']
-		li=index + ': ' + val
-ul
-	- each val, index in {'item1':'menu1', 'item2':'menu2', 'item3':'menu3'}
-		li=index + ': ' + val
+nav.menu
+	.inner
+		ul.menu_list
+			li.menu_item
+				a.menu_link(href="/about") О компании
+				.menu_inner
+					ul.menu_list__l2
+						li.menu_item__l2
+							a.menu_link__l2(href="/cert") Сертификаты
+						li.menu_item__l2
+							a.menu_link__l2(href="/job") Вакансии
+						li.menu_item__l2
+							a.menu_link__l2(href="/contacts") Контакты
+			li.menu_item
+				a.menu_link(href="/services") Услуги
+			li.menu_item
+				a.menu_link(href="/price") Цены
+			li.menu_item
+				a.menu_link(href="/gallery") Фотогалерея
+			li.menu_item
+				a.menu_link(href="/news") Новости
+			li.menu_item
+				a.menu_link(href="/articles") Статьи
+			li.menu_item
+				a.menu_link(href="/contacts") Контакты
+			li.menu_item
+				a.menu_link(href="/special") Акции

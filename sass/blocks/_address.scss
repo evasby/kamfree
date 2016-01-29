@@ -1,0 +1,56 @@
+.address{
+	float: right;
+	padding: 5px 22px 0 0;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #373736;
+	&__footer{
+		color: #fefcfc;
+	}
+	&_time{
+		font-family: $fontBold;
+		margin-bottom: 7px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -38px;
+			width: 24px;
+			height: 24px;
+			background: url('../images/address.png');
+		}
+		&__footer{
+			&:before{
+				top: 2px;
+				background-position: 0 48px;
+			}
+		}
+		span{
+			font-family: $font;
+			display: block;
+		}
+	}
+	&_address{
+		font-family: $fontBold;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: -38px;
+			width: 24px;
+			height: 24px;
+			background: url('../images/address.png') 0 72px;
+		}
+		&__footer{
+			&:before{
+				background-position: 0 24px;
+			}
+		}
+		span{
+			font-family: $font;
+			display: block;
+		}
+	}
+}

@@ -1,3 +1,8 @@
 .footer{
-
+	background-color: #424e5e;
+	padding: 55px 0 0;
+	&_wrap{
+		@include clearfix;
+		padding: 49px 0 33px;
+	}
 }

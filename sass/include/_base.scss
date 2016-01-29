@@ -18,6 +18,7 @@
   box-sizing: border-box;
 }
 body{
+  font-family: $font;
   font-size: $fontSize;
   line-height: $lineHeight;
   color: $fontColor;
@@ -28,21 +29,27 @@ body{
   // @include wide {
   //   @include container(960px);
   // }
+  max-width: $maxWidth;
+  padding: $innerPadings;
+  margin: 0 auto;
+  //background-color: #ddd;
 }
 a{
 
 }
 p{
-  
+
 }
 h1{
-
+  font-family: $fontBold;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 h2{
 
 }
 b, strong{
-  
+  font-family: $fontBold;
 }
 
 .test{
