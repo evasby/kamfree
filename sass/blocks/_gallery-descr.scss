@@ -1,0 +1,46 @@
+.gallery-descr{
+	padding: 12px 0;
+	h1{
+		color: #0c74bd;
+		padding: 0 0 14px 8px;
+		margin-bottom: 27px;
+		border-bottom: 1px solid #eaeaea;
+		box-shadow: inset 0px -1px 0px 0px rgba(249,249,249,1);
+	}
+	p{
+		text-align: justify;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+	h2{
+		font-family: $fontBold;
+		font-size: 16.7px;
+		color: #0c74bd;
+		margin: 43px 0 11px;
+	}
+	a{
+		font-family: $fontBold;
+		@include link(#0c74bd, #0c74bd);
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	ul{
+		margin: -11px 0 8px;
+		li{
+			padding-left: 31px;
+			position: relative;
+			line-height: 1.2;
+			&:before{
+				content: "";
+				position: absolute;
+				left: 11px;
+				top: 8px;
+				width: 6px;
+				height: 6px;
+				background: url('../images/list-item.png');
+			}
+		}
+	}
+}

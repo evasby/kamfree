@@ -2,109 +2,132 @@ extends include/html
 block title
 	title KamFree - Главная страница
 block content
-	section.why
+	include include/slider
+	section.why#why
 		.inner
 			h1 
 				span Почему мы?
 			ul.why_list
-				li.why_item Компетентные специалисты 10 лет опыта
-				li.why_item Бесплатный осмотр и консультация
+				li.why_item Компетентные специалисты <br> 10 лет опыта
+				li.why_item Бесплатный осмотр и <br> консультация
 				li.why_item Реальные цены
-				li.why_item Гарантия качества 3 года
-				li.why_item Комплектация материалами по оптовым ценам
+				li.why_item Гарантия качества <br> 3 года
+				li.why_item Комплектация материалами <br> по оптовым ценам
 				li.why_item Не срываем сроки выполнения
 	section.reviews
-		.inner
-			h1 Отзывы
-			ul.reviews_list
-				li.reviews_item
-					article.review
-						header
-							img(src="images/reviews/review1.jpg", alt="")
-							h2.review_h
-								Иван Иванов
-						p.review_body Эта компания лучшая на земле. Эта компания лучшая на земле. Эта компания лучшая на земле.
-						footer
-							a.review_link(href="#") Смотреть все работы
-							ul.social-mini
-								li.social-mini_item
-									a.social-mini_link(href="#") Вконтакте
-								li.social-mini_item
-									a.social-mini_link(href="#") Facebook
-								li.social-mini_item
-									a.social-mini_link(href="#") Twitter
-								li.social-mini_item
-									a.social-mini_link(href="#") Одноклассники
-				li.reviews_item
-					article.review
-						header
-							img(src="images/reviews/review2.jpg", alt="")
-							h2.review_h
-								Иван Иванов
-						p.review_body Эта компания лучшая на земле. Эта компания лучшая на земле. Эта компания лучшая на земле.
-						footer
-							a.review_link(href="#") Смотреть все работы
-							ul.social-mini
-								li.social-mini_item
-									a.social-mini_link(href="#") Вконтакте
-								li.social-mini_item
-									a.social-mini_link(href="#") Facebook
-								li.social-mini_item
-									a.social-mini_link(href="#") Twitter
-								li.social-mini_item
-									a.social-mini_link(href="#") Одноклассники
-				li.reviews_item
-					article.review
-						header
-							img(src="images/reviews/review3.jpg", alt="")
-							h2.review_h
-								Иван Иванов
-						p.review_body Эта компания лучшая на земле. Эта компания лучшая на земле. Эта компания лучшая на земле.
-						footer
-							a.review_link(href="#") Смотреть все работы
-							ul.social-mini
-								li.social-mini_item
-									a.social-mini_link(href="#") Вконтакте
-								li.social-mini_item
-									a.social-mini_link(href="#") Facebook
-								li.social-mini_item
-									a.social-mini_link(href="#") Twitter
-								li.social-mini_item
-									a.social-mini_link(href="#") Одноклассники
+		.reviews_inner
+			.inner
+				h1
+					span Отзывы
+				ul.reviews_list
+					li.reviews_item
+						article.review
+							header
+								img(src="images/reviews/review1.jpg", alt="")
+								h2.review_h Иван Иванов
+							p.review_body Эта компания лучшая на земле. Эта компания лучшая на земле. Эта компания лучшая на земле.
+							footer
+								a.review_link(href="#") Смотреть работы
+								ul.social-mini
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__vk(href="#") Вконтакте
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__fb(href="#") Facebook
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__tt(href="#") Twitter
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__ok(href="#") Одноклассники
+					li.reviews_item
+						article.review
+							header
+								img(src="images/reviews/review2.jpg", alt="")
+								h2.review_h Иван Иванов
+							p.review_body Эта компания лучшая на земле. Эта компания лучшая на земле. Эта компания лучшая на земле.
+							footer
+								a.review_link(href="#") Смотреть работы
+								ul.social-mini
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__vk(href="#") Вконтакте
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__fb(href="#") Facebook
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__tt(href="#") Twitter
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__ok(href="#") Одноклассники
+					li.reviews_item
+						article.review
+							header
+								img(src="images/reviews/review3.jpg", alt="")
+								h2.review_h Иван Иванов
+							p.review_body Эта компания лучшая на земле. Эта компания лучшая на земле. Эта компания лучшая на земле.
+							footer
+								a.review_link(href="#") Смотреть работы
+								ul.social-mini
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__vk(href="#") Вконтакте
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__fb(href="#") Facebook
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__tt(href="#") Twitter
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__ok(href="#") Одноклассники
+					li.reviews_item
+						article.review
+							header
+								img(src="images/reviews/review3.jpg", alt="")
+								h2.review_h Иван Иванов
+							p.review_body Эта компания лучшая на земле. Эта компания лучшая на земле. Эта компания лучшая на земле.
+							footer
+								a.review_link(href="#") Смотреть работы
+								ul.social-mini
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__vk(href="#") Вконтакте
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__fb(href="#") Facebook
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__tt(href="#") Twitter
+									li.social-mini_item
+										a.social-mini_link.social-mini_link__ok(href="#") Одноклассники
+			a.reviews_left(href="#")
+			a.reviews_right(href="#")
 	section.feedback
 		.inner
-			h1 Оставить заявку
+			h1
+				span Оставить заявку
 			form(action="#")
-				.feedback_input
-					input(type="text")
-				.feedback_input
-					input(type="text")
-				.feedback_textarea
-					textarea(name="", cols="30", rows="10")
+				.feedback_inner
+					//.feedback_textarea
+					textarea(name="", cols="30", rows="10", placeholder="Какая наша помощь Вам необходима?")
+					//.feedback_input
+					input(type="text", placeholder="Введите имя")
+					//.feedback_input
+					input(type="text", placeholder="Введите телефон")
 				.feedback_file
-					input(type="file")
+					input.inputfile#file(type="file", name="file")
+					<label for="file"><span>Прикрепить файл</span></label>
 				.feedback_submit
-					.feedback_captcha я не робот
-					input(type="submit")
+					.feedback_captcha
+						img(src="images/feedback-captcha.jpg", alt="")
+					input(type="submit", value="Отправить")
 	section.article
 		.inner
 			header
 				h1 Сантехнические работы в минске
 				img(src="images/article/article-main.jpg", alt="", style={float: 'right'})
 				p Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в эксплуатацию, их необходимо смонтировать в первую очередь. Также возникает потребность в таких сантехнических работах в Минске, когда оборудование вышло из строя либо уже устарело.
-				p Замена, и монтаж с нуля систем отопления, водообеспечения и отведения канализационных стоков – очень ответственная и сложная задача, требующая соответствующих знаний, опыта работы и специальной техники. Поэтому выполнение сантехнических работ можно доверить только специалистам компании Kamfree.by.
+				p Замена, и монтаж с нуля систем отопления, водообеспечения и отведения канализационных стоков – очень ответственная и сложная задача, требующая соответствующих знаний, опыта работы и специальной техники. <b>Поэтому выполнение сантехнических работ можно доверить только специалистам компании Kamfree.by.</b>
 				p Сотрудники нашей компании выполняют сантехнические работы уже более 10 лет, и это – наша главная специализация. Есть в нашем распоряжении и необходимое современное оборудование, инструменты. Нам доступны сантехработы любой сложности, ремонт мы осуществим на наивысшем уровне.
 			h2 Какие сантехнические работы в Минске мы выполняем?
 			p Наша команда выполняет весь спектр сантехнических работ. В частности, мы предоставляем такие сантехнические услуги, как:
 			ul
-				li монтаж и замена труб (водопроводных, канализационных, отопительных);
-				li установка (замена) всех видов сантехнического оборудования;
-				li монтаж, замена либо перенос отопительных радиаторов и так далее.
+				li <b>монтаж и замена труб</b> (водопроводных, канализационных, отопительных);
+				li <b>установка (замена) всех видов сантехнического оборудования;</b>
+				li <b>монтаж, замена либо перенос отопительных радиаторов</b> и так далее.
 			p Специалисты <a href="/">Kamfree.by</a> оперативно выедут на объект по вашему вызову, произведут его бесплатный осмотр и предоставят все необходимые консультации. Также мы обеспечиваем комплектацией всеми необходимыми современными высококачественными материалами, причем по стоимости оптовой закупки.
 			a(href="#").colorbox-inline
-				img(src="images/article/article-1.jpg", alt="")
+				img(src="images/article/article-1.jpg", alt="", style="margin-right:60px;")
 			a(href="#").colorbox-inline
-				img(src="images/article/article-2.jpg", alt="")
+				img(src="images/article/article-2.jpg", alt="", style="margin-right:60px;")
 			a(href="#").colorbox-inline
 				img(src="images/article/article-3.jpg", alt="")
 			h2 Особенности сантехнических работ в Минске по монтажу инженерных систем?

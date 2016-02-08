@@ -22,6 +22,7 @@ body{
   font-size: $fontSize;
   line-height: $lineHeight;
   color: $fontColor;
+  min-width: $minWidth;
   //-webkit-font-smoothing: antialised;
 }
 .inner{
@@ -32,7 +33,6 @@ body{
   max-width: $maxWidth;
   padding: $innerPadings;
   margin: 0 auto;
-  //background-color: #ddd;
 }
 a{
 
@@ -44,6 +44,10 @@ h1{
   font-family: $fontBold;
   font-size: 28px;
   text-transform: uppercase;
+  span{
+    padding-bottom: 5px;
+    position: relative;
+  }
 }
 h2{
 
@@ -56,6 +60,7 @@ b, strong{
   //@include span(4 last);
 }
 textarea{
+  font-family: $font;
   resize: none;
   box-shadow: none;
   border-radius: 0px;
@@ -72,23 +77,33 @@ a, input, textarea{
     outline: none;
   }
 }
-::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+::-webkit-input-placeholder {
   
 }
 :-moz-placeholder {
-  
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
 }
 ::-moz-placeholder {
-  
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
 }
 :-ms-input-placeholder {
-  
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
 }
 ::-ms-input-placeholder {
-  
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
 }
 :placeholder-shown {
-  
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
 }
 .hide{
   display: none;

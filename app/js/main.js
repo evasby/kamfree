@@ -1,11 +1,38 @@
 $(document).ready(function(){
   /***********************************/
+  $(".menuRight_list__l2").each(function(){
+    $(this).hide();
+  });
+
+  $(".menuRight_item").click(function(e) {
+      e.preventDefault();
+      $(".menuRight_item").removeClass("menuRight_item__open");
+      $(".menuRight_list__l2:visible").slideUp("normal");
+      if (($(this).find(".menuRight_link").next().is("ul")) && (!$(this).find(".menuRight_link").next().is(":visible"))) {
+        $(this).addClass("menuRight_item__open").find(".menuRight_link").next().slideDown("normal");
+      }
+  });
   $(".slider_list").lightSlider({
     item: 1,
     loop:true,
     slideMargin: 0,
     pager: false
-  }); 
+  });
+  var reviewsList = $(".reviews_list").lightSlider({
+    item: 3,
+    loop:true,
+    slideMargin: 65,
+    pager: false,
+    controls: false
+  });
+  $('.reviews_left').click(function(e){
+    e.preventDefault();
+    reviewsList.goToPrevSlide();
+  });
+  $('.reviews_right').click(function(e){
+    e.preventDefault();
+    reviewsList.goToNextSlide();
+  });
   /***********************************/
   $('.up').click(function(e){
     e.preventDefault();
@@ -20,16 +47,29 @@ $(document).ready(function(){
   });
   /***********************************/
   /***********************************/
-  /*var waypointUp = new Waypoint({
-    element: document.getElementById('about'),
+  if($("#why").length) {
+    var waypointUp = new Waypoint({
+      element: document.getElementById('why'),
+      handler: function(direction) {
+        if (direction == 'down') {
+           $('.up').addClass('up__show');
+        } else {
+           $('.up').removeClass('up__show');
+        }
+      }
+    })
+  }
+  var waypointUp = new Waypoint({
+    element: document.getElementById('menu'),
     handler: function(direction) {
       if (direction == 'down') {
-         $('.up').addClass('up__show');
+         $('.headerFixed').addClass('headerFixed__show');
       } else {
-         $('.up').removeClass('up__show');
+         $('.headerFixed').removeClass('headerFixed__show');
       }
-    }
-  })*/
+    },
+    offset: -80
+  })
   /*imagesLoaded******************************/ 
   // $('#container').imagesLoaded( { background: true }, function() {
   //   console.log('#container background image loaded');
@@ -112,3 +152,39 @@ $(document).ready(function(){
   google.maps.event.addDomListener(window, 'load', initialize);*/
   /************************************************************************/
 });
+/*
+  By Osvaldas Valutis, www.osvaldas.info
+  Available for use under the MIT License
+*/
+
+'use strict';
+
+;( function( $, window, document, undefined )
+{
+  $( '.inputfile' ).each( function()
+  {
+    var $input   = $( this ),
+      $label   = $input.next( 'label' ),
+      labelVal = $label.html();
+
+    $input.on( 'change', function( e )
+    {
+      var fileName = '';
+
+      if( this.files && this.files.length > 1 )
+        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+      else if( e.target.value )
+        fileName = e.target.value.split( '\\' ).pop();
+
+      if( fileName )
+        $label.find( 'span' ).html( fileName );
+      else
+        $label.html( labelVal );
+    });
+
+    // Firefox bug fix
+    $input
+    .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
+    .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+  });
+})( jQuery, window, document );

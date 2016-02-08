@@ -1,3 +1,114 @@
 .review{
-	
+	text-align: center;
+	header{
+		img{
+			display: block;
+			margin: 0 auto;
+			border-radius: 50%;
+			margin-bottom: 20px;
+		}
+	}
+	&_h{
+		display: inline-block;
+		background-color: #fff;
+		font-family: $fontBold;
+		font-size: 21.7px;
+		color: #0c74bd;
+		position: relative;
+		z-index: 15;
+		padding: 0 20px;
+	}
+	&_body{
+		font-family: $fontBold;
+		font-size: 14.3px;
+		line-height: 1.3;
+		color: #5b5b5b;
+		background-color: #fff;
+		border: 3px solid #ebecec;
+		position: relative;
+		margin-top: -11px;
+		padding: 15px 0 38px;
+		@include old-ie{
+			z-index: 10;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: -40px;
+			top: 50%;
+			margin-top: -1.5px;
+			width: 40px;
+			height: 3px;
+			background-color: #ebecec;	
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			z-index: -1;
+			right: -40px;
+			top: 50%;
+			margin-top: -1.5px;
+			width: 40px;
+			height: 3px;
+			background-color: #ebecec;	
+		}
+		@include old-ie{
+	    *zoom: expression(
+	    this.runtimeStyle.zoom="1",
+	    this.appendChild( document.createElement("small") ).className="after"
+	    );
+	    .after{
+	      position: absolute;
+				z-index: 5;
+				right: -68px;
+				top: 50%;
+				margin-top: -1.5px;
+				width: 68px;
+				height: 3px;
+				background-color: #ebecec;
+	    }
+	  }
+	}
+	footer{
+		position: relative;
+		z-index: 15;
+		margin-top: -19px;
+	}
+	&_link{
+		font-family: $fontBold;
+		font-size: 14px;
+		background-color: #fff;
+		display: inline-block;
+		padding: 0 12px;
+		line-height: 1.9;
+		@include link(#0c74bd, #fdfdfd);
+		text-decoration: none;
+		border: 2px solid #0c74bd;
+		border-radius: 5px;
+		position: relative;
+		&:hover{
+			background-color: #0c74bd;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: -15px;
+			top: 50%;
+			width: 15px;
+			height: 100%;
+			background-color: #fff;	
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			z-index: -1;
+			right: -15px;
+			top: 50%;
+			width: 15px;
+			height: 100%;
+			background-color: #fff;	
+		}
+	}
 }

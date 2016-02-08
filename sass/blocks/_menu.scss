@@ -1,6 +1,5 @@
 .menu{
 	background-color: #0c74bd;
-	//padding: 0 10px;
 	&_list{
 		font-family: $fontBold;
 		font-size: 16.3px;
@@ -50,14 +49,10 @@
 			visibility: hidden;
   }
   &_item{
-  	//background: #E76D13;
-    //width: 98px;
-    //height: 98px;
     padding: 0 10px;
     position: relative;
     display: inline-block;
     text-align: left;
-    //border: 1px solid #000;
     line-height: normal;
     font-size: 16.3px;
     vertical-align: top;
@@ -65,6 +60,10 @@
     	*display : inline;
     	*zoom : 1;
   	}
+    @include wide{
+      font-size: 12px;
+      padding: 0 8px;
+    }
   }
   &_link{
   	display: inline-block;
@@ -74,13 +73,33 @@
   	border-top: 4px solid #0c74bd;
   	border-bottom: 4px solid #0c74bd;
   	padding: 0 12px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0px;
+      width: 100%;
+      height: 4px;
+      background-color: #0c74bd;
+      border-radius: 2px;
+      transition: background 0.1s;
+    }
   	.menu_item:hover &{
-  		border-bottom: 4px solid #f0ad11;
+      &:before{
+        background-color: #f0ad11;
+      }
   	}
+    .menu_item:last-child &{
+      @include link(#f0ad11, #f0ad11);
+    }
   	@include old-ie{
     	*display : inline;
     	*zoom : 1;
   	}
+    @include wide{
+      padding: 0 8px;
+    }
   	&__l2{
   		@include link(#fefefe, #030303);
   		text-decoration: none;

@@ -1,0 +1,87 @@
+.menuRight{
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+	overflow: hidden;
+	background-color: #fff;
+	.service &{
+		position: absolute;
+		width: 100%;
+		top: 35px;
+		left: 0;
+	}
+	@include old-ie{
+		border: 1px solid #d8d8d8;
+	}
+	&_list{
+		padding: 7px 0;
+		&__l2{
+			background-color: #f3eddf;
+			margin: 0 -14px 0 -9px;
+		}
+	}
+	&_item{
+		padding: 0 14px 0 9px;
+		cursor: pointer;
+		&:hover,
+		&__active,
+		&__open{
+			background-color: #f0ad11;
+		}
+		&__l2{
+			padding: 0 14px 0 9px;
+		}
+	}
+	&_link{
+		display: block;
+		@include link(#434242, #fdfafa);
+		font-size: 15.8px;
+		text-decoration: none;
+		box-shadow: 0px -2px 0px 0px rgba(242,241,241,1);
+		padding: 5px 0 5px 33px;
+		line-height: 1.3;
+		position: relative;
+		.menuRight_item:first-child &{
+			box-shadow: none;
+		}
+		&__l2{
+			display: block;
+			@include link(#434242, #0c74bd);
+			text-decoration: none;
+			padding: 6px 0 7px 33px;
+			box-shadow: 0px -2px 0px 0px rgba(242,241,241,1);
+			.menuRight_item__l2:first-child &{
+				box-shadow: none;
+			}
+			.menuRight_item__l2__active &{
+				@include link(#0c74bd, #0c74bd);
+			}
+		}
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 12px;
+			left: 10px;
+			width: 12px;
+			height: 8px;
+			background: url('../images/menuRight-arrow.png');
+		}
+		.menuRight_item:hover &,
+		.menuRight_item__active &,
+		.menuRight_item__open &{
+			box-shadow: none;
+			color: #fdfafa;
+			&:before{
+				background-position: 0 8px;
+			}
+		}
+		.menuRight_item:hover + .menuRight_item &,
+		.menuRight_item__active + .menuRight_item &,
+		.menuRight_item__open + .menuRight_item &{
+			box-shadow: none;
+		}
+		.menuRight_item:first-child &{
+			border-top: none;
+		}
+	}
+}

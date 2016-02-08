@@ -1,0 +1,102 @@
+extends include/html
+block title
+	title Цены
+block content
+	main#main.main
+		.inner
+			.mybreadcrumb
+				a.mybreadcrumb_link(href="/") Главная
+				span.mybreadcrumb_item Цены
+			article.price
+				h1 Цены
+				h2 Стоимость работ и услуг по установке и замене счетчиков
+				table
+					tr
+						th N
+						th Наименование работ
+						th ед. изм.
+						th Стоимость, руб.
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+				p В стоимость услуг включены:
+				ul
+					li монтажные работы;
+					li стоимсоть материанлов;
+					li пломбировка установленных счетчиков;
+					li пакет документов для ДЭЗ.
+				| <br>
+				h2 Стоимость работ и услуг по замене радиаторов
+				table
+					tr
+						th N
+						th Наименование работ
+						th ед. изм.
+						th Стоимость, руб.
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+					tr
+						td 1
+						td Установка смесителя
+						td шт
+						td 1 000 000
+				p В стоимость услуг включены демонтажные работы.
+	section.feedback
+		.inner
+			h1
+				span Оставить заявку
+			form(action="#")
+				.feedback_inner
+					//.feedback_textarea
+					textarea(name="", cols="30", rows="10", placeholder="Какая наша помощь Вам необходима?")
+					//.feedback_input
+					input(type="text", placeholder="Введите имя")
+					//.feedback_input
+					input(type="text", placeholder="Введите телефон")
+				.feedback_file
+					input.inputfile#file(type="file", name="file")
+					<label for="file"><span>Прикрепить файл</span></label>
+				.feedback_submit
+					.feedback_captcha
+						img(src="images/feedback-captcha.jpg", alt="")
+					input(type="submit", value="Отправить")

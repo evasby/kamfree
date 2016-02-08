@@ -1,0 +1,79 @@
+.services{
+	padding: 12px 0;
+	h1{
+		color: #0c74bd;
+		padding: 0 0 14px 8px;
+		margin-bottom: 27px;
+		border-bottom: 1px solid #eaeaea;
+		box-shadow: inset 0px -1px 0px 0px rgba(249,249,249,1);
+	}
+	h2{
+		font-family: $fontBold;
+		font-size: 17px;
+		color: #f0ad11;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 19px;
+	}
+	&_wrap{
+		@include clearfix;
+	}
+	&_left{
+		float: left;
+		width: 73%;
+		padding-right: 60px;
+	}
+	&_right{
+		float: left;
+		width: 27%;
+	}
+	&_descr{
+		padding-bottom: 30px;
+		p{
+			text-align: justify;
+			line-height: 1.2;
+			margin-bottom: 20px;
+		}
+	}
+	&_list{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		width: 48.5%;
+		margin-right: 3%;
+		min-height: 146px;
+		@include clearfix;
+		&:nth-child(2n){
+			margin-right: 0;
+		}
+		a{
+			font-family: $fontBold;
+			font-size: 13.7px;
+			line-height: 1.2;
+			text-transform: uppercase;
+			display: block;
+			overflow: hidden;
+			padding-left: 20px;
+			text-decoration: none;
+			@include link(#0c74bd, #757574);
+		}
+	}
+	&_image{
+		float: left;
+		width: 20%;
+		padding: 0 6px;
+	}
+	&_body{
+		overflow: hidden;
+		padding: 10px 0 0 20px;
+		font-size: 12px;
+		text-align: justify;
+		line-height: 1.2;
+		p{
+			font-size: 12.25px;
+			text-align: justify;
+			line-height: 1.2;
+		}
+	}
+}

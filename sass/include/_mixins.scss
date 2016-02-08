@@ -6,8 +6,9 @@
 //*********************************************************************************/
 @mixin wide {
   // @if not $old-ie {
-    @media screen and (min-width: 800px) { @content; }
+  //  @media screen and (min-width: 800px) { @content; }
   // }
+  @media all and (max-width: 1023px) { @content; }
 }
 //*********************************************************************************/
 @mixin placeholder($color, $opacity:1){
@@ -63,7 +64,7 @@
 }
 
 //*********************************************************************************/
-@mixin beforeIE7{
+@mixin before{
   &:before{
     content: "";
     @content;

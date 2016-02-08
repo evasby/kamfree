@@ -20,6 +20,7 @@
 	}
 	&_button{
 		background-color: #fcc400;
+		background: linear-gradient(to bottom, rgba(244,196,84,1) 0%,rgba(217,152,0,1) 100%); 
 		font-family: $fontBold;
 		font-size: 16.5px;
 		line-height: 2.4;
@@ -33,11 +34,14 @@
 		box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
 		&:hover{
 			background-color: #0c74bd;
+			background: linear-gradient(to bottom, rgba(71,145,198,1) 0%,rgba(11,99,161,1) 100%);
 		}
 		&__footer{
+			background: none;
 			background-color: #fefefe;
 			@include link(#424e5e, #fefefe);
 			&:hover{
+				background: none;
 				background-color: #37414f;
 			}
 		}

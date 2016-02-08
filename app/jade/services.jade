@@ -1,0 +1,73 @@
+extends include/html
+block title
+	title Услуги
+block content
+	main#main.main
+		.inner
+			.mybreadcrumb
+				a.mybreadcrumb_link(href="/") Главная
+				span.mybreadcrumb_item Услуги
+			section.services
+				h1 Услуги
+				.services_wrap
+					div.services_left
+						div.services_descr
+							p Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в эксплуатацию, их необходимо смонтировать в первую очередь. Также возникает потребность в таких сантехнических работах в Минске, когда оборудование вышло из строя либо уже устарело.
+						ul.services_list
+							li.services_item
+								.services_image
+									img(src="images/services/services-1.png", alt="")
+								a(href="#").services_name Установка сантехники
+								.services_body Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в
+							li.services_item
+								.services_image
+									img(src="images/services/services-2.png", alt="")
+								a(href="#").services_name Установка счетчиков воды
+								.services_body Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в
+							li.services_item
+								.services_image
+									img(src="images/services/services-3.png", alt="")
+								a(href="#").services_name Проектирование и монтаж инженерных сетей
+								.services_body Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в
+							li.services_item
+								.services_image
+									img(src="images/services/services-4.png", alt="")
+								a(href="#").services_name Подключение бытовой техники
+								.services_body Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в
+							li.services_item
+								.services_image
+									img(src="images/services/services-5.png", alt="")
+								a(href="#").services_name Установка водоснабжения
+								.services_body Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в
+							li.services_item
+								.services_image
+									img(src="images/services/services-6.png", alt="")
+								a(href="#").services_name Монтаж труб
+								.services_body Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в
+							li.services_item
+								.services_image
+									img(src="images/services/services-7.png", alt="")
+								a(href="#").services_name Монтаж отопления
+								.services_body Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в
+					aside.services_right
+						h2 Виды работ
+						include include/menuRight
+	section.feedback
+		.inner
+			h1
+				span Оставить заявку
+			form(action="#")
+				.feedback_inner
+					//.feedback_textarea
+					textarea(name="", cols="30", rows="10", placeholder="Какая наша помощь Вам необходима?")
+					//.feedback_input
+					input(type="text", placeholder="Введите имя")
+					//.feedback_input
+					input(type="text", placeholder="Введите телефон")
+				.feedback_file
+					input.inputfile#file(type="file", name="file")
+					<label for="file"><span>Прикрепить файл</span></label>
+				.feedback_submit
+					.feedback_captcha
+						img(src="images/feedback-captcha.jpg", alt="")
+					input(type="submit", value="Отправить")

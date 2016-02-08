@@ -1,5 +1,92 @@
 .feedback{
+	padding: 39px 0 33px;
 	background-color: #f0ad11;
-	box-shadow: inset 0 20px 10px -10px rgba(0,0,0,.3),
-							inset 0 -20px 10px -10px rgba(0,0,0,.3);
+	box-shadow: inset 0 20px 5px -10px rgba(0,0,0,.2),
+							inset 0 -20px 5px -10px rgba(0,0,0,.2);
+	h1{
+		color: #fcfdfe;
+		margin-bottom: 72px;
+		span{
+			&:before{
+	      content: '';
+	      position: absolute;
+	      bottom: -4px;
+	      left: 0;
+	      width: 100%;
+	      height: 4px;
+	      background-color: #0c74bd;
+	      border-radius: 2px;
+	    }
+		}
+	}
+	&_inner{
+		@include clearfix;
+	}
+	form{
+		@include clearfix;
+	}
+	&_input{
+		width: 20%;
+	}
+	input[type="text"]{
+		font-family: $font;
+  	font-size: $fontSize;
+		width: 27%;
+		float: left;
+		border: none;
+		margin-bottom: 37px;
+		font-size: 20px;
+		line-height: 2.5;
+		padding: 0 12px;
+		box-shadow: 0px 0px 2px 3px rgba(11,11,11,0.13),
+								inset 0px 0px 2px 3px rgba(11,11,11,0.13);
+		border-radius: 5px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	textarea{
+		font-family: $font;
+  	font-size: $fontSize;
+		float: right;
+		height: 137px;
+		width: 69%;
+		border: none;
+		font-size: 20px;
+		padding: 12px;
+		box-shadow: 0px 0px 2px 3px rgba(11,11,11,0.13),
+								inset 0px 0px 2px 3px rgba(11,11,11,0.13);
+		border-radius: 5px;
+	}
+	&_submit{
+		text-align: right;
+		float: right;
+		width: 69%;
+	}
+	input[type="submit"]{
+		border: 3px solid #0c74bd;
+		display: inline-block;
+		margin-top: 25px;
+		padding: 0 52px;
+		border-radius: 7px;
+		background: rgba(12,115,189,1);
+		background: linear-gradient(to bottom, rgba(12,115,189,1) 0%, rgba(0,98,168,1) 100%);
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,.1);
+		font-family: $fontBold;
+		color: #fffefe;
+		font-size: 21.8px;
+		line-height: 1.9;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover{
+			background: transparent;
+		}
+	}
+	&_file{
+		text-align: right;
+		padding-top: 5px;
+	}
+	&_captcha{
+		float: left;
+	}
 }

@@ -1,0 +1,32 @@
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	& + label{
+		font-size: 15px;
+    color: #434242;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1.5;
+    padding-right: 30px;
+  	background: url('../images/fileinput.png') 100% 0 no-repeat;
+	}
+	&:focus + label,
+	& + label:hover{
+
+	}
+	&:focus + label{
+		//outline: 1px dotted #000;
+		//outline: -webkit-focus-ring-color auto 5px;
+		outline: none;
+	}
+	& + label *{
+		pointer-events: none;
+	}
+	.no-js & + label {
+		display: none;
+	}
+}

@@ -1,0 +1,90 @@
+extends include/html
+block title
+	title Фотогалерея
+block content
+	main#main.main
+		.inner
+			.mybreadcrumb
+				a.mybreadcrumb_link(href="/") Главная
+				span.mybreadcrumb_item Фотогалерея
+			section.gallery
+				ul.gallery_list
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+					li.gallery_item
+						a.gallery_link(href="#")
+							.gallery_image
+								img(src="images/gallery.jpg", alt="")
+							span Пример работ по установке труб Рехау
+	section.feedback
+		.inner
+			h1
+				span Оставить заявку
+			form(action="#")
+				.feedback_inner
+					//.feedback_textarea
+					textarea(name="", cols="30", rows="10", placeholder="Какая наша помощь Вам необходима?")
+					//.feedback_input
+					input(type="text", placeholder="Введите имя")
+					//.feedback_input
+					input(type="text", placeholder="Введите телефон")
+				.feedback_file
+					input.inputfile#file(type="file", name="file")
+					<label for="file"><span>Прикрепить файл</span></label>
+				.feedback_submit
+					.feedback_captcha
+						img(src="images/feedback-captcha.jpg", alt="")
+					input(type="submit", value="Отправить")

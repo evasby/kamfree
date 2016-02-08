@@ -1,0 +1,81 @@
+.headerFixed{
+	position: fixed;
+	top: -100%;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	min-width: $minWidth;
+	padding: 11px 0;
+	@include clearfix;
+	background-color: #0c74bd;
+	font-size: 22px;
+	color: #f9fafb;
+	transition: top 0.2s;
+	@include wide{
+		font-size: 18px;
+	}
+	&__show{
+		top: 0;
+	}
+	&_logo{
+		float: left;
+		width: 30%;
+		img{
+			width: 100%;
+			max-width: 227px;
+			height: auto;
+		}
+	}
+	&_phone1{
+		float: left;
+		width: 24%;
+		padding-top: 13px;
+		span{
+			font-family: $fontBold;
+			font-size: 27px;
+			@include wide{
+				font-size: 20px;
+			}
+		}
+	}
+	&_phone2{
+		float: left;
+		width: 24%;
+		padding-top: 13px;
+		span{
+			font-family: $fontBold;
+			font-size: 27px;
+			@include wide{
+				font-size: 20px;
+			}
+		}
+	}
+	&_button{
+		float: left;
+		width: 22%;
+		text-align: right;
+		padding-top: 8px;
+	}
+	&_link{
+		background-color: #fcc400;
+		background: linear-gradient(to bottom, rgba(244,196,84,1) 0%,rgba(217,152,0,1) 100%); 
+		font-family: $fontBold;
+		font-size: 16.5px;
+		line-height: 2.4;
+		@include link(#fefefe, #fefefe);
+		text-decoration: none;
+		display: inline-block;
+		width: 85%;
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 5px;
+		box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
+		&:hover{
+			background-color: #0c74bd;
+			background: linear-gradient(to bottom, rgba(71,145,198,1) 0%,rgba(11,99,161,1) 100%);
+		}
+		@include wide{
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,148 @@
+.service{
+	padding: 12px 0;
+	h1{
+		color: #0c74bd;
+		padding: 0 0 14px 8px;
+		margin-bottom: 27px;
+		border-bottom: 1px solid #eaeaea;
+		box-shadow: inset 0px -1px 0px 0px rgba(249,249,249,1);
+	}
+	h2{
+		font-family: $fontBold;
+		font-size: 16.7px;
+		color: #0c74bd;
+		margin: 43px 0 11px;
+	}
+	&_header{
+		@include clearfix;
+		padding-bottom: 34px;
+		h2{
+			color: #f0ad11;
+			text-align: center;
+			margin: 0 0 19px;
+			text-transform: uppercase;
+		}
+	}
+	&_body{
+		a{
+			font-family: $fontBold;
+			@include link(#0c74bd, #0c74bd);
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		p{
+			line-height: 1.2;
+			margin-bottom: 18px;
+			text-align: justify;
+		}
+		ul{
+			margin: -11px 0 8px;
+			li{
+				padding-left: 31px;
+				position: relative;
+				line-height: 1.2;
+				&:before{
+					content: "";
+					position: absolute;
+					left: 11px;
+					top: 8px;
+					width: 6px;
+					height: 6px;
+					background: url('../images/list-item.png');
+				}
+			}
+		}
+	}
+	&_left{
+		float: left;
+		width: 73%;
+		padding-right: 46px;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			box-shadow: -2px 0px 9px 0px rgba(0,0,0,0.35);
+		}
+	}
+	&_right{
+		float: left;
+		width: 27%;
+		position: relative;
+	}
+	&_accent{
+		border-radius: 10px;
+		//background-color: #0c74bd;
+		padding: 26px 60px 26px 125px;
+		margin-bottom: 53px;
+		box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.35);
+		background: url("../images/service-accent.png") 53px 29px no-repeat #0c74bd;
+		p{
+			font-family: $fontBold;
+			font-size: 17px;
+			color: #fef9f9;
+			line-height: 1.2;
+			text-align: justify;
+		}
+	}
+	&_price{
+		h2{
+			font-family: $fontBold;
+			font-size: 25px;
+			color: #f0ad11;
+			margin: 32px 0 26px;
+			padding: 0 0 0 8px;
+		}
+		table{
+			width: 100%;
+			border-collapse: separate;
+	    border-spacing: 0;
+	   	margin-bottom: 33px;
+			th{
+				font-size: 23.2px;
+				font-family: $fontBold;
+				padding: 16px 0;
+				background-color: #e8e8e8;
+				text-align: center;
+				border-right: 2px solid #e8e8e8;
+	    	border-bottom: 2px solid #e8e8e8;
+	    	&:first-child{
+	    		font-family: $font;
+	    		border-left: 3px solid #e8e8e8;
+	    		border-top-left-radius: 6px;
+	    	}
+	    	&:last-child{
+	    		border-right: 3px solid #e8e8e8;
+	    		border-top-right-radius: 6px;
+	    	}
+			}
+			td{
+				font-size: 17.3px;
+				padding: 16px 0;
+				text-align: center;
+				border-right: 2px solid #e8e8e8;
+	    	border-bottom: 2px solid #e8e8e8;
+	    	&:first-child{
+	    		width: 125px;
+	    		border-left: 3px solid #e8e8e8;
+	    	}
+	    	&:last-child{
+	    		border-right: 3px solid #e8e8e8;
+	    	}
+			}
+			tr{
+				&:hover{
+					td{
+						background-color: #f3eddf;
+					}
+				}
+				&:last-child{
+					td{
+						border-bottom: 3px solid #e8e8e8;
+					}
+				}
+			}
+		}
+	}
+}
