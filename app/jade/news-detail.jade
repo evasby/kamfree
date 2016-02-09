@@ -1,0 +1,53 @@
+extends include/html
+block title
+	title Новость 1
+block content
+	main#main.main
+		.inner
+			.mybreadcrumb
+				a.mybreadcrumb_link(href="/") Главная
+				a.mybreadcrumb_link(href="/") Новости
+				span.mybreadcrumb_item Новость 1
+			article.news-detail
+				header
+					h1.news-detail_h1 Новость 1
+					img(src="images/news/news-1.jpg", alt="")
+				p Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в эксплуатацию, их необходимо смонтировать в первую очередь. Также возникает потребность в таких сантехнических работах в Минске, когда оборудование вышло из строя либо уже устарело.
+				p Замена, и монтаж с нуля систем отопления, водообеспечения и отведения канализационных стоков – очень ответственная и сложная задача, требующая соответствующих знаний, опыта работы и специальной техники. <b>Поэтому выполнение сантехнических работ можно доверить только специалистам компании Kamfree.by.</b>
+				p Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в эксплуатацию, их необходимо смонтировать в первую очередь. Также возникает потребность в таких сантехнических работах в Минске, когда оборудование вышло из строя либо уже устарело.
+				p Замена, и монтаж с нуля систем отопления, водообеспечения и отведения канализационных стоков – очень ответственная и сложная задача, требующая соответствующих знаний, опыта работы и специальной техники. <b>Поэтому выполнение сантехнических работ можно доверить только специалистам компании Kamfree.by.</b>
+			section.another-full
+				h1.another-full_h1 Другие новости:
+				div.another-full_wrap
+					a(href="#").another-full_item
+						.another-full_image
+							img(src="images/news/news-1.jpg", alt="")
+						span Заголовок новости 1
+					a(href="#").another-full_item
+						.another-full_image
+							img(src="images/news/news-1.jpg", alt="")
+						span Заголовок новости 1
+					a(href="#").another-full_item
+						.another-full_image
+							img(src="images/news/news-1.jpg", alt="")
+						span Заголовок новости 1
+					a(href="#").another-full_item
+						.another-full_image
+							img(src="images/news/news-1.jpg", alt="")
+						span Заголовок новости 1
+	section.feedback
+		.inner
+			h1
+				span Оставить заявку
+			form(action="#")
+				.feedback_inner
+					textarea(name="", cols="30", rows="10", placeholder="Какая наша помощь Вам необходима?")
+					input(type="text", placeholder="Введите имя")
+					input(type="text", placeholder="Введите телефон")
+				.feedback_file
+					input.inputfile#file(type="file", name="file")
+					<label for="file"><span>Прикрепить файл</span></label>
+				.feedback_submit
+					.feedback_captcha
+						img(src="images/feedback-captcha.jpg", alt="")
+					input(type="submit", value="Отправить")

@@ -1,0 +1,41 @@
+.another-full{
+	padding: 55px 0 3px;
+	&_h1{
+		color: $fontColor;
+		font-family: $font;
+		font-size: 22px;
+		margin-bottom: 27px;
+	}
+	&_wrap{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		width: 22.22%;
+		margin-left: 3.7%;
+		text-decoration: none;
+		font-size: 18px;
+		font-family: $fontBold;
+		@include link(#434242, #056ab1);
+		&:first-child { 
+			margin-left: 0; 
+		}
+		&:hover{
+			//text-decoration: none;
+		}
+	}
+	&_image{
+		margin-bottom: 20px;
+		border-radius: 7px;
+		.another-full_item:hover &{
+			box-shadow: inset 0px 0px 0px 3px #056ab1;
+		}
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			position: relative;
+  		z-index: -2;
+		}
+	}
+}

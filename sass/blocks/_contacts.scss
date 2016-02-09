@@ -1,0 +1,92 @@
+.contacts{
+	padding: 12px 0;
+	font-size: 21px;
+	&_h1{
+		color: #0c74bd;
+		padding: 0 0 14px 8px;
+		margin-bottom: 27px;
+		border-bottom: 1px solid #eaeaea;
+		box-shadow: inset 0px -1px 0px 0px rgba(249,249,249,1);
+	}
+	&_wrap{
+		@include clearfix;
+	}
+	&_left{
+		float: left;
+		width: 42.5%;
+		padding-left: 33px;
+	}
+	&_right{
+		float: left;
+		width: 57.5%;
+	}
+	&_phone{
+		color: #373736;
+		position: relative;
+		margin-bottom: 12px;
+		&:before{
+				content: "";
+				position: absolute;
+				top: 2px;
+				left: -33px;
+				width: 21px;
+				height: 23px;
+				background: url('../images/contacts-phone.png');
+			}
+		p{
+			line-height: 1.1;
+			&:first-child{
+				font-family: $fontBold;
+			}
+			span{
+				font-family: $fontBold;
+				color: #0c74bd;
+				font-size: 24px;
+			}
+		}
+	}
+	&_address{
+		color: #373736;
+		margin-bottom: 14px;
+		p{
+			font-family: $fontBold;
+			position: relative;
+			line-height: 1.1;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: -33px;
+				width: 24px;
+				height: 24px;
+				background: url('../images/address.png') 0 72px;
+			}
+			span{
+				font-family: $font;
+				display: block;
+			}
+		}
+	}
+	&_work{
+		position: relative;
+		p{
+			font-family: $fontBold;
+			margin-bottom: 7px;
+			position: relative;
+			line-height: 1.1;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -33px;
+				width: 24px;
+				height: 24px;
+				background: url('../images/address.png');
+			}
+			span{
+				font-family: $font;
+				display: block;
+			}
+		}
+	}
+}

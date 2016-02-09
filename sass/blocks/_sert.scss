@@ -1,0 +1,27 @@
+.sert{
+	padding: 15px 0 30px;
+	&_wrap{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		margin-left: 5%;
+		width: 21.25%;
+		box-shadow: 4px -4px 21px 0px rgba(0,0,0,0.24);
+		&:first-child{
+			margin-left: 0;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_h1{
+		text-transform: none;
+		font-family: $fontBold;
+		font-size: 25px;
+		color: #f0ad11;
+		margin: 32px 0 36px;
+		padding: 0 0 0 8px;
+	}
+}

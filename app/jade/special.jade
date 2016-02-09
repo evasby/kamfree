@@ -1,0 +1,81 @@
+extends include/html
+block title
+	title Акции
+block content
+	main#main.main
+		.inner
+			.mybreadcrumb
+				a.mybreadcrumb_link(href="/") Главная
+				span.mybreadcrumb_item Акции
+			section.special
+				h1.special_h1 Акции
+				div.special_item
+					div.special_image
+						img(src="images/news/news-1.jpg", alt="")
+					div.special_right
+						h2
+							a(href="#") Заголовок акции
+						span.special_date с 01.01.2016 по 01.01.2017
+						p Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в эксплуатацию, их необходимо смонтировать в первую очередь. Также возникает потребность в таких сантехнических работах в Минске, когда оборудование вышло из строя либо уже устарело.
+						div.special_link
+							a(href="#") Подробнее
+				div.special_item
+					div.special_image
+						img(src="images/news/news-1.jpg", alt="")
+					div.special_right
+						h2
+							a(href="#") Заголовок акции
+						span.special_date с 01.01.2016 по 01.01.2017
+						p Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в эксплуатацию, их необходимо смонтировать в первую очередь. Также возникает потребность в таких сантехнических работах в Минске, когда оборудование вышло из строя либо уже устарело.
+						div.special_link
+							a(href="#") Подробнее
+				div.special_item
+					div.special_image
+						img(src="images/news/news-1.jpg", alt="")
+					div.special_right
+						h2
+							a(href="#") Заголовок акции
+						span.special_date с 01.01.2016 по 01.01.2017
+						p Наш комфорт в квартирах, домах, офисах обеспечивают системы водо-, теплоснабжения, и канализации. Если помещение только вводится в эксплуатацию, их необходимо смонтировать в первую очередь. Также возникает потребность в таких сантехнических работах в Минске, когда оборудование вышло из строя либо уже устарело.
+						div.special_link
+							a(href="#") Подробнее
+				section.another
+					h1.another_h1 Другие акции:
+					ul.another_list
+						li.another_item
+							a.another_link(href="#") Заголовок акции
+						li.another_item
+							a.another_link(href="#") Заголовок акции
+						li.another_item
+							a.another_link(href="#") Заголовок акции
+				.mypager
+					ul.pager.mypager_list
+						li.mypager_item.mypager-prev
+							a(href="") <
+						li.mypager_item
+							a(href="#") 1
+						li.mypager_item
+							a(href="#") 2
+						li.mypager_item.mypager_item__current 3
+						li.mypager_item
+							a(href="#") 4
+						li.mypager_item
+							a(href="#") 5
+						li.mypager_item.mypager-next
+							a(href="") >
+	section.feedback
+		.inner
+			h1
+				span Оставить заявку
+			form(action="#")
+				.feedback_inner
+					textarea(name="", cols="30", rows="10", placeholder="Какая наша помощь Вам необходима?")
+					input(type="text", placeholder="Введите имя")
+					input(type="text", placeholder="Введите телефон")
+				.feedback_file
+					input.inputfile#file(type="file", name="file")
+					<label for="file"><span>Прикрепить файл</span></label>
+				.feedback_submit
+					.feedback_captcha
+						img(src="images/feedback-captcha.jpg", alt="")
+					input(type="submit", value="Отправить")

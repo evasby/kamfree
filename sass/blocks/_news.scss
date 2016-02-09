@@ -1,0 +1,72 @@
+.news{
+	padding: 12px 0;
+	&_h1{
+		color: #0c74bd;
+		padding: 0 0 14px 8px;
+		margin-bottom: 27px;
+		border-bottom: 1px solid #eaeaea;
+		box-shadow: inset 0px -1px 0px 0px rgba(249,249,249,1);
+	}
+	&_item{
+		@include clearfix;
+		margin-bottom: 47px;
+	}
+	&_image{
+		float: left;
+		width: 22%;
+		img{
+			border-radius: 7px;
+			display: block;
+			width: 100%;
+			height: auto;
+			box-shadow: -1px 0px 7px 0px rgba(0,0,0,0.35);
+		}
+	}
+	&_right{
+		float: left;
+		width: 78%;
+		padding: 0 0 0 46px;
+		h2{
+			font-family: $fontBold;
+			font-size: 28px;
+			color: #0c74bd;
+			margin-bottom: 1px;
+			a{
+				@include link(#0c74bd, #434242);
+				text-decoration: none;
+			}
+		}
+		p{
+			text-align: justify;
+			line-height: 1.1;
+		}
+	}
+	&_date{
+		//font-family: $fontBold;
+		font-size: 16px;
+		color: #686868;
+		display: block;
+		margin-bottom: 11px;
+	}
+	&_link{
+		text-align: right;
+		padding-top: 10px;
+		a{
+			font-size: 14px;
+			position: relative;
+			@include link(#959595, #616060);
+			text-decoration: none;
+			font-style: italic;
+			padding-right: 22px;
+			&:after{
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 1px;
+				width: 17px;
+				height: 17px;
+				background: url('../images/news-arrow.png');
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+extends include/html
+block title
+	title Контакты
+block content
+	main#main.main
+		.inner
+			.mybreadcrumb
+				a.mybreadcrumb_link(href="/") Главная
+				span.mybreadcrumb_item Контакты
+			article.contacts
+					h1.contacts_h1 ООО “КАМФРИ”
+					.contacts_wrap
+						.contacts_left
+							.contacts_phone
+								p Телефоны:
+								p +375 (29) 
+									span 574 93 20
+								p +375 (29) 
+									span 574 93 20
+							.contacts_address
+								p Адрес:
+									span г. Минск ул. Байкальская, 58/1
+							.contacts_work
+								p Режим работы:
+									span c 09.00 до 18.00
+						.contacts_right
+							.map#map
+	section.feedback
+		.inner
+			h1
+				span Оставить заявку
+			form(action="#")
+				.feedback_inner
+					textarea(name="", cols="30", rows="10", placeholder="Какая наша помощь Вам необходима?")
+					input(type="text", placeholder="Введите имя")
+					input(type="text", placeholder="Введите телефон")
+				.feedback_file
+					input.inputfile#file(type="file", name="file")
+					<label for="file"><span>Прикрепить файл</span></label>
+				.feedback_submit
+					.feedback_captcha
+						img(src="images/feedback-captcha.jpg", alt="")
+					input(type="submit", value="Отправить")
