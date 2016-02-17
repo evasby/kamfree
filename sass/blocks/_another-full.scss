@@ -5,6 +5,7 @@
 		font-family: $font;
 		font-size: 22px;
 		margin-bottom: 27px;
+		padding-left: 8px;
 	}
 	&_wrap{
 		@include clearfix;
@@ -15,7 +16,7 @@
 		margin-left: 3.7%;
 		text-decoration: none;
 		font-size: 18px;
-		font-family: $fontBold;
+		//font-family: $fontBold;
 		@include link(#434242, #056ab1);
 		&:first-child { 
 			margin-left: 0; 
@@ -27,8 +28,10 @@
 	&_image{
 		margin-bottom: 20px;
 		border-radius: 7px;
+		overflow: hidden;
+		box-shadow: -1px 0px 7px 0px rgba(0,0,0,0.35);
 		.another-full_item:hover &{
-			box-shadow: inset 0px 0px 0px 3px #056ab1;
+			box-shadow: inset 0px 0px 0px 4px #056ab1;
 		}
 		img{
 			display: block;

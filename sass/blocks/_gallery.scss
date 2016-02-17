@@ -16,14 +16,14 @@
 		span{
 			display: inline-block;
 			text-align: left;
-			font-family: $fontBold;
+			//font-family: $fontBold;
 			font-size: 16.7px;
 			line-height: 1.1;
 		}
 	}
 	&_image{
 		.gallery_link:hover &{
-			box-shadow: inset 0px 0px 0px 3px rgba(12,115,189,1);
+			box-shadow: inset 0px 0px 0px 4px rgba(12,115,189,1);
 			border-radius: 10px;
 		}
 		img{

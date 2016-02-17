@@ -23,7 +23,7 @@
 	&_phone{
 		color: #373736;
 		position: relative;
-		margin-bottom: 12px;
+		margin-bottom: 20px;
 		&:before{
 				content: "";
 				position: absolute;
@@ -35,23 +35,26 @@
 			}
 		p{
 			line-height: 1.1;
+			font-size: 17px;
 			&:first-child{
 				font-family: $fontBold;
+				font-size: 19px;
 			}
 			span{
 				font-family: $fontBold;
 				color: #0c74bd;
-				font-size: 24px;
+				font-size: 17px;
 			}
 		}
 	}
 	&_address{
 		color: #373736;
-		margin-bottom: 14px;
+		margin-bottom: 20px;
 		p{
 			font-family: $fontBold;
 			position: relative;
 			line-height: 1.1;
+			font-size: 19px;
 			&:before{
 				content: "";
 				position: absolute;
@@ -64,6 +67,7 @@
 			span{
 				font-family: $font;
 				display: block;
+				font-size: 17px;
 			}
 		}
 	}
@@ -74,6 +78,7 @@
 			margin-bottom: 7px;
 			position: relative;
 			line-height: 1.1;
+			font-size: 19px;
 			&:before{
 				content: "";
 				position: absolute;
@@ -86,6 +91,7 @@
 			span{
 				font-family: $font;
 				display: block;
+				font-size: 17px;
 			}
 		}
 	}

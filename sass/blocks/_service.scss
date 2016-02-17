@@ -21,6 +21,7 @@
 			text-align: center;
 			margin: 0 0 19px;
 			text-transform: uppercase;
+			font-size: 19px;
 		}
 	}
 	&_body{
@@ -75,7 +76,7 @@
 		border-radius: 10px;
 		//background-color: #0c74bd;
 		padding: 26px 60px 26px 125px;
-		margin-bottom: 53px;
+		margin-bottom: 40px;
 		box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.35);
 		background: url("../images/service-accent.png") 53px 29px no-repeat #0c74bd;
 		p{
@@ -100,7 +101,7 @@
 	    border-spacing: 0;
 	   	margin-bottom: 33px;
 			th{
-				font-size: 23.2px;
+				font-size: 21px;
 				font-family: $fontBold;
 				padding: 16px 0;
 				background-color: #e8e8e8;
@@ -108,7 +109,7 @@
 				border-right: 2px solid #e8e8e8;
 	    	border-bottom: 2px solid #e8e8e8;
 	    	&:first-child{
-	    		font-family: $font;
+	    		//font-family: $font;
 	    		border-left: 3px solid #e8e8e8;
 	    		border-top-left-radius: 6px;
 	    	}

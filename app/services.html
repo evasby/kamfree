@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head><meta charset="UTF-8"><!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script type='text/javascript' src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <title>Услуги</title>
-    <!--build:css css/all.css-->
-    <link rel="stylesheet" href="css/all.css">
-    <!--endbuild-->
-    <!--build:css css/all-old-ie.css--><!--[if lte IE 8]>
+    <!-- -->
+    <!-- build:css css/all.css -->
+    <link rel="stylesheet" href="/css/all.css">
+    <!-- endbuild -->
+    <!--build:css css/all-old-ie.css-->
+    <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/all-old-ie.css"><![endif]-->
     <!--endbuild-->
   </head>
@@ -176,22 +179,33 @@
           <li class="social_item"><a href="#" class="social_link social_link__gg">Google +</a></li>
         </ul>
       </section>
-    </footer><a href="#header" class="up"></a>
+    </footer>
+    <div class="hide">
+      <div id="form1" class="form-popup">
+        <div class="form-popup_wrap form-popup_wrap__callback">
+          <div class="form-popup_title">Оставьте заявку</div>
+          <p class="form-popup_descr">Оставьте контактные данные и с Вами обязательно свяжется мастер для консультации</p>
+          <div class="form-popup_inner"><input id="edit-submitted-name--6" class="webform-hints-field form-text" type="text" maxlength="128" size="60" value="" name="submitted[name]" placeholder="Введите имя" title="Введите имя"></div>
+          <div class="form-popup_inner"><input id="edit-submitted-phone--6" class="webform-hints-field form-text required" type="text" maxlength="128" size="60" value="" name="submitted[phone]" placeholder="Введите телефон" title="Ваш телефон" required="required"></div>
+          <div class="form-popup_button"><input id="edit-webform-ajax-submit-20" class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Отправить" name="op"></div>
+          <p class="form-popup_note">*Ваши данные будут в безопасности и не будут переданы третьим лицам</p>
+        </div>
+      </div>
+    </div><a href="#header" class="up"></a><!-- -->
     <!--[if lte IE 8]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <!--build:js js/vendor.js-->
-    <!--bower:js-->
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
-    <script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
-    <!--endbower-->
-    <!--endbuild-->
+    <script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script><!-- endbower -->
+    <!-- endbuild -->
     <script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <!--build:js js/main.js-->
+    <!-- build:js js/main.js -->
     <script src="js/main.js"></script>
-    <!--endbuild-->
+    <!-- endbuild -->
   </body>
 </html>

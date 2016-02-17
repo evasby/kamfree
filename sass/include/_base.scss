@@ -78,7 +78,9 @@ a, input, textarea{
   }
 }
 ::-webkit-input-placeholder {
-  
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
 }
 :-moz-placeholder {
   font-family: $font;
