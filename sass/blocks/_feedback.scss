@@ -5,6 +5,9 @@
 	background: linear-gradient(to right, rgba(211,152,14,1) 0%, rgba(237,203,123,1) 40%, rgba(237,203,123,1) 60%, rgba(211,152,14,1) 100%);
 	box-shadow: inset 0 15px 7px -15px rgba(0,0,0,.2),
 							inset 0 -15px 7px -15px rgba(0,0,0,.2);
+	& .messages{
+		display: none;
+	}
 	h1{
 		color: #fcfdfe;
 		margin-bottom: 72px;
@@ -46,6 +49,10 @@
 		&:last-child{
 			margin-bottom: 0px;
 		}
+		&.error{
+			box-shadow: 0px 0px 2px 3px rgba(11,11,11,0.13),
+								inset 0px 0px 5px 1px rgba(255,0,0,1);
+		}
 	}
 	textarea{
 		font-family: $font;
@@ -64,11 +71,12 @@
 		text-align: right;
 		float: right;
 		width: 69%;
+		position: relative;
+		//margin-top: 25px;
 	}
 	input[type="submit"]{
 		border: 3px solid #0c74bd;
 		display: inline-block;
-		margin-top: 25px;
 		padding: 0 52px;
 		border-radius: 7px;
 		background: rgba(12,115,189,1);
@@ -87,8 +95,105 @@
 	&_file{
 		text-align: right;
 		padding-top: 5px;
+		.description{
+			display: none;
+		}
 	}
 	&_captcha{
 		float: left;
 	}
+	.form-managed-file{
+		position: relative;
+		min-height: 25px;
+		& > span img{
+			display: none;
+		}
+		& > span a{
+			@include link(#434242, #434242);
+		}
+		input{
+			font-size: 10px;
+			font-family: $font;
+		}
+		.ajax-progress{
+		  position: absolute;
+		  z-index: 1;
+		  top: auto;
+		  bottom: 7px;
+		  right: -30px;
+		  .throbber {
+		    //background: transparent url('../images/loader.gif') no-repeat 0px 0px;
+		    float: left;
+		    height: 12px;
+		    width: 12px;
+		    margin: 0px;
+		  }
+		}
+		.form-submit{
+			//display: none;
+		}
+		.form-submit[name="submitted_file_upload_button"]{
+			display: none;
+		}
+		.form-submit[name="submitted_file_remove_button"]{
+			margin-bottom: 30px;
+		}
+	}
+	.webform-component-file{
+		margin: 0;
+	}
+	.webform-component-file label{
+		font-size: 15px;
+    color: #434242;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1.5;
+    padding-right: 30px;
+  	background: url('../images/fileinput.png') 100% 0 no-repeat;
+	}
+	.form-file{
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+		/*& + label{
+			font-size: 15px;
+	    color: #434242;
+	    display: inline-block;
+	    cursor: pointer;
+	    line-height: 1.5;
+	    padding-right: 30px;
+	  	background: url('../images/fileinput.png') 100% 0 no-repeat;
+		}
+		&:focus + label,
+		& + label:hover{
+
+		}
+		&:focus + label{
+			outline: none;
+		}
+		& + label *{
+			pointer-events: none;
+		}
+		.no-js & + label {
+			display: none;
+		}*/
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

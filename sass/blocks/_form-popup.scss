@@ -7,6 +7,9 @@
 	border-radius: 22px;
 	overflow: hidden;
 	color: #fefefe;
+	& .messages{
+		display: none;
+	}
 	&_wrap{
 		width: 410px;
 		float: right;

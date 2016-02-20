@@ -85,7 +85,8 @@
       border-radius: 2px;
       transition: background 0.1s;
     }
-  	.menu_item:hover &{
+  	.menu_item:hover &,
+    .menu_item__active &{
       &:before{
         background-color: #f0ad11;
       }
@@ -110,6 +111,9 @@
   		.menu_item__l2:first-child &{
   			border: none;
   		}
+      &.active{
+        @include link(#030303, #030303);
+      }
   	}
   }
 }

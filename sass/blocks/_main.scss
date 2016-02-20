@@ -1,3 +1,20 @@
 .main{
-  padding: 14px 0 50px;
+	padding: 14px 0 50px;
+	.front &{
+		padding: 50px 0 50px;
+	}
+	h1{
+		color: #0c74bd;
+	  padding: 0 0 14px 8px;
+	  margin: 12px 0 27px;
+	  border-bottom: 1px solid #eaeaea;
+	  box-shadow: inset 0px -1px 0px 0px rgba(249,249,249,1);
+	  .front &{
+	    color: inherit;
+	    padding: 0;
+	    margin: 0 0 44px;
+	    border-bottom: none;
+	    box-shadow: none;
+	  }
+	}
 }

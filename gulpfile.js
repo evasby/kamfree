@@ -73,6 +73,7 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('d:/OpenServer/domains/kamfree/sites/all/themes/kamfree/css'))
     .pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });
@@ -110,9 +111,9 @@ gulp.task('fonts', function() {
 gulp.task('build', function () {
     return gulp.src('app/*.html')
       .pipe(useref())
-      .pipe(gulpif('*.js', uglify()))
-      .pipe(gulpif('*.css', minifyCss({compatibility: 'ie7'})))
-      .pipe(gulp.dest('temp'));
+      //.pipe(gulpif('*.js', uglify()))
+      //.pipe(gulpif('*.css', minifyCss({compatibility: 'ie7'})))
+      .pipe(gulp.dest('drupal'));
 });
 
 // Bower
@@ -132,4 +133,5 @@ gulp.task('watch', function () {
 });
 
 // default
-gulp.task('default', ['connect', 'jade', 'html', 'css', 'watch']);
+//gulp.task('default', ['connect', 'jade', 'html', 'css', 'watch']);
+gulp.task('default', ['connect', 'html', 'css', 'watch']);
