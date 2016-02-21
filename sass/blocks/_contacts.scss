@@ -1,5 +1,5 @@
 .contacts{
-	padding: 12px 0;
+	padding: 0 0 12px;
 	font-size: 21px;
 	&_h1{
 		color: #0c74bd;
@@ -37,7 +37,7 @@
 			line-height: 1.1;
 			font-size: 17px;
 			&:first-child{
-				font-family: $fontBold;
+				//font-family: $fontBold;
 				font-size: 19px;
 			}
 			span{
@@ -51,7 +51,7 @@
 		color: #373736;
 		margin-bottom: 20px;
 		p{
-			font-family: $fontBold;
+			//font-family: $fontBold;
 			position: relative;
 			line-height: 1.1;
 			font-size: 19px;
@@ -74,7 +74,7 @@
 	&_work{
 		position: relative;
 		p{
-			font-family: $fontBold;
+			//font-family: $fontBold;
 			margin-bottom: 7px;
 			position: relative;
 			line-height: 1.1;

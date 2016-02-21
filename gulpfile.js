@@ -113,7 +113,7 @@ gulp.task('build', function () {
       .pipe(useref())
       //.pipe(gulpif('*.js', uglify()))
       //.pipe(gulpif('*.css', minifyCss({compatibility: 'ie7'})))
-      .pipe(gulp.dest('drupal'));
+      .pipe(gulp.dest('temp'));
 });
 
 // Bower

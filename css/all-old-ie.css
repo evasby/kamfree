@@ -4194,8 +4194,7 @@ a:focus, input:focus, textarea:focus {
     .feedback .form-managed-file .ajax-progress {
       position: absolute;
       z-index: 1;
-      top: auto;
-      bottom: 7px;
+      top: -12px;
       right: -30px; }
       .feedback .form-managed-file .ajax-progress .throbber {
         float: left;
@@ -4269,7 +4268,15 @@ a:focus, input:focus, textarea:focus {
     display: none; }
 
 .article {
-  padding: 0; }
+  padding: 0;
+  *zoom: 1; }
+  .article:before, .article:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .article:after {
+    clear: both; }
   .front .article {
     padding: 0 0 25px; }
   .article header img {
@@ -4416,7 +4423,7 @@ a:focus, input:focus, textarea:focus {
       left: -12px; }
 
 .gallery-descr {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .gallery-descr h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -4513,7 +4520,7 @@ a:focus, input:focus, textarea:focus {
     box-shadow: -1px 0px 7px 0px rgba(0, 0, 0, 0.31); }
 
 .price {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .price h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -4529,7 +4536,7 @@ a:focus, input:focus, textarea:focus {
     font-family: AvantGardeCTT-Bold, sans-serif;
     font-size: 25px;
     color: #f0ad11;
-    margin: 32px 0 26px;
+    margin: 0 0 26px;
     padding: 0 0 0 8px; }
   .price a {
     font-family: AvantGardeCTT-Bold, sans-serif;
@@ -4546,7 +4553,7 @@ a:focus, input:focus, textarea:focus {
     .price a:hover {
       text-decoration: underline; }
   .price ul {
-    margin: -11px 0 8px; }
+    margin: -11px 0 40px; }
     .price ul li {
       padding-left: 31px;
       position: relative;
@@ -4598,7 +4605,7 @@ a:focus, input:focus, textarea:focus {
       border-bottom: 3px solid #e8e8e8; }
 
 .services {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .services h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -4796,7 +4803,7 @@ a:focus, input:focus, textarea:focus {
       border-top: none; }
 
 .service {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .service h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -4806,7 +4813,7 @@ a:focus, input:focus, textarea:focus {
     box-shadow: inset 0px -1px 0px 0px #f9f9f9; }
   .service h2 {
     font-family: AvantGardeCTT-Bold, sans-serif;
-    font-size: 16.7px;
+    font-size: 17px;
     color: #0c74bd;
     margin: 43px 0 11px; }
   .service_header {
@@ -4929,7 +4936,7 @@ a:focus, input:focus, textarea:focus {
       border-bottom: 3px solid #e8e8e8; }
 
 .news {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .news_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5014,7 +5021,7 @@ a:focus, input:focus, textarea:focus {
         background: url("../images/news-arrow.png"); }
 
 .special {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .special_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5100,7 +5107,7 @@ a:focus, input:focus, textarea:focus {
         background: url("../images/news-arrow.png"); }
 
 .articles {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .articles_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5196,7 +5203,7 @@ a:focus, input:focus, textarea:focus {
         background: url("../images/news-arrow.png"); }
 
 .another {
-  padding: 30px 0 0; }
+  margin-top: 30px; }
   .another_h1 {
     color: #434242;
     font-family: AvantGardeCTT-Regular, sans-serif;
@@ -5230,7 +5237,7 @@ a:focus, input:focus, textarea:focus {
       color: #959595; }
 
 .news-detail {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .news-detail_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5284,7 +5291,7 @@ a:focus, input:focus, textarea:focus {
         background: url("../images/list-item.png"); }
 
 .special-detail {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .special-detail_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5341,13 +5348,13 @@ a:focus, input:focus, textarea:focus {
   .special-detail_date {
     position: absolute;
     right: 14px;
-    bottom: 14px;
+    top: -55px;
     font-family: AvantGardeCTT-Bold, sans-serif;
     font-size: 16px;
     color: #e1a106; }
 
 .articles-detail {
-  padding: 12px 0; }
+  padding: 0 0 12px; }
   .articles-detail_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5482,7 +5489,7 @@ a:focus, input:focus, textarea:focus {
     padding: 0 0 0 8px; }
 
 .contacts {
-  padding: 12px 0;
+  padding: 0 0 12px;
   font-size: 21px; }
   .contacts_h1 {
     color: #0c74bd;
@@ -5523,7 +5530,6 @@ a:focus, input:focus, textarea:focus {
       line-height: 1.1;
       font-size: 17px; }
       .contacts_phone p:first-child {
-        font-family: AvantGardeCTT-Bold, sans-serif;
         font-size: 19px; }
       .contacts_phone p span {
         font-family: AvantGardeCTT-Bold, sans-serif;
@@ -5533,7 +5539,6 @@ a:focus, input:focus, textarea:focus {
     color: #373736;
     margin-bottom: 20px; }
     .contacts_address p {
-      font-family: AvantGardeCTT-Bold, sans-serif;
       position: relative;
       line-height: 1.1;
       font-size: 19px; }
@@ -5552,7 +5557,6 @@ a:focus, input:focus, textarea:focus {
   .contacts_work {
     position: relative; }
     .contacts_work p {
-      font-family: AvantGardeCTT-Bold, sans-serif;
       margin-bottom: 7px;
       position: relative;
       line-height: 1.1;

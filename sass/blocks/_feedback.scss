@@ -118,8 +118,8 @@
 		.ajax-progress{
 		  position: absolute;
 		  z-index: 1;
-		  top: auto;
-		  bottom: 7px;
+		  //top: auto;
+		  top: -12px;
 		  right: -30px;
 		  .throbber {
 		    //background: transparent url('../images/loader.gif') no-repeat 0px 0px;
