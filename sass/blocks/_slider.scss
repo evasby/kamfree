@@ -6,6 +6,10 @@
         height: auto;
         max-width: 100%;
 	}
+    &_list{
+        max-height: 418px;
+        overflow: hidden;
+    }
 	&_item{
 		display: block;
         float: left;

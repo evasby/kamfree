@@ -3164,6 +3164,9 @@ a:focus, input:focus, textarea:focus {
     display: block;
     height: auto;
     max-width: 100%; }
+  .slider_list {
+    max-height: 418px;
+    overflow: hidden; }
   .slider_item {
     display: block;
     float: left;
@@ -3623,6 +3626,9 @@ a:focus, input:focus, textarea:focus {
       background-color: #f0ad11;
       -webkit-border-radius: 2px;
       border-radius: 2px; }
+  .reviews_list {
+    max-height: 297px;
+    overflow: hidden; }
   .reviews_left {
     width: 46px;
     display: block;
