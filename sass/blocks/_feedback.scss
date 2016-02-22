@@ -119,13 +119,13 @@
 		  position: absolute;
 		  z-index: 1;
 		  //top: auto;
-		  top: -12px;
-		  right: -30px;
+		  top: 0px;
+		  right: -35px;
 		  .throbber {
-		    //background: transparent url('../images/loader.gif') no-repeat 0px 0px;
+		    background: transparent url('../images/newloader-min.gif') no-repeat 0px 0px;
 		    float: left;
-		    height: 12px;
-		    width: 12px;
+		    height: 30px;
+		    width: 30px;
 		    margin: 0px;
 		  }
 		}

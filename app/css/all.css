@@ -140,12 +140,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   z-index: 1;
   top: 50%;
-  margin-top: -6px;
-  right: -20px; }
+  margin-top: -30px;
+  right: -50px; }
   .ajax-progress .throbber {
+    background: transparent url("../images/newloader.gif") no-repeat 0px 0px;
     float: left;
-    height: 12px;
-    width: 12px;
+    height: 50px;
+    width: 50px;
     margin: 0px; }
 
 .captcha {
@@ -4170,12 +4171,13 @@ a:focus, input:focus, textarea:focus {
     .feedback .form-managed-file .ajax-progress {
       position: absolute;
       z-index: 1;
-      top: -12px;
-      right: -30px; }
+      top: 0px;
+      right: -35px; }
       .feedback .form-managed-file .ajax-progress .throbber {
+        background: transparent url("../images/newloader-min.gif") no-repeat 0px 0px;
         float: left;
-        height: 12px;
-        width: 12px;
+        height: 30px;
+        width: 30px;
         margin: 0px; }
     .feedback .form-managed-file .form-submit[name="submitted_file_upload_button"] {
       display: none; }
@@ -4435,7 +4437,7 @@ a:focus, input:focus, textarea:focus {
     float: left;
     width: 22.3%;
     margin-left: 3.6%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 61px; }
     .gallery_item:nth-child(4n-3) {
       margin-left: 0px; }
@@ -4454,6 +4456,17 @@ a:focus, input:focus, textarea:focus {
       text-align: left;
       font-size: 16.7px;
       line-height: 1.1; }
+  .gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 14px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 0px 7px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: -1px 0px 7px 0px rgba(0, 0, 0, 0.31); }
   .gallery_link:hover .gallery_image {
     -webkit-box-shadow: inset 0px 0px 0px 4px #0c73bd;
     box-shadow: inset 0px 0px 0px 4px #0c73bd;
@@ -5514,18 +5527,21 @@ a:focus, input:focus, textarea:focus {
   height: 492px; }
 
 .location {
-  height: 88px;
-  padding-top: 15px;
   background-color: #0c74bd;
   color: #f9fbfd; }
   .location h1 {
     font-size: 14px;
     text-align: center;
-    margin-bottom: 10px; }
+    padding: 0;
+    margin: 4px 0 13px;
+    color: #f9fbfd;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   .location p {
     text-align: center;
     margin-bottom: 5px;
-    font-size: 16px; }
+    font-size: 14px; }
 
 .footer {
   background-color: #424e5e;
@@ -5671,6 +5687,9 @@ a:focus, input:focus, textarea:focus {
       border-radius: 6px;
       -webkit-box-shadow: inset 1px 0px 1px 0px rgba(0, 0, 0, 0.3), 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
       box-shadow: inset 1px 0px 1px 0px rgba(0, 0, 0, 0.3), 1px 0px 1px 0px rgba(0, 0, 0, 0.3); }
+      .form-popup_inner input.error {
+        -webkit-box-shadow: inset 0px 0px 5px 1px red, 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0px 0px 5px 1px red, 1px 0px 1px 0px rgba(0, 0, 0, 0.3); }
   .form-popup_button {
     width: 206px;
     margin: 35px auto 8px auto;

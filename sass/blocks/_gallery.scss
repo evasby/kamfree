@@ -5,7 +5,7 @@
 		float: left;
 		width: 22.3%;
 		margin-left: 3.6%;
-		text-align: center;
+		text-align: left;
 		margin-bottom: 61px;
 		&:nth-child(4n-3){
 			margin-left: 0px;
@@ -20,6 +20,16 @@
 			font-size: 16.7px;
 			line-height: 1.1;
 		}
+	}
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		position: relative;
+		z-index: -2;
+		margin-bottom: 14px;
+		border-radius: 10px;
+		box-shadow: -1px 0px 7px 0px rgba(0,0,0,0.31);
 	}
 	&_image{
 		.gallery_link:hover &{
