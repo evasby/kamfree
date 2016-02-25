@@ -1,5 +1,5 @@
 .special-detail{
-	padding: 0 0 12px;
+	padding: 0;
 	&_h1{
 		color: #0c74bd;
 		padding: 0 0 14px 8px;
@@ -59,5 +59,28 @@
 		font-family: $fontBold;
 		font-size: 16px;
 		color: #e1a106;
+	}
+	footer{
+		text-align: center;
+	}
+	&_link{
+		border: 3px solid #0c74bd;
+		display: inline-block;
+		padding: 0 25px;
+		border-radius: 7px;
+		background: rgba(12,115,189,1);
+		background: linear-gradient(to bottom, rgba(12,115,189,1) 0%, rgba(0,98,168,1) 100%);
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,.1);
+		font-family: $fontBold;
+		@include link(#fbfdff!important, #0C74BD!important);
+		
+		font-size: 17px;
+		line-height: 1.9;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover{
+			background: transparent;
+			text-decoration: none!important;
+		}
 	}
 }

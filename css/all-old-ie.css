@@ -155,7 +155,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .drupal-recaptcha > div > div {
   margin: 0 auto; }
 
-#simplemeta-meta-form {
+#simplemeta-meta-form-ajax-wrapper,
+#simplemeta-meta-form-ajax-wrapper div,
+#simplemeta-meta-form-ajax-wrapper form,
+#simplemeta-meta-form-ajax-wrapper label,
+#simplemeta-meta-form-ajax-wrapper input,
+#simplemeta-meta-form-ajax-wrapper textarea,
+#simplemeta-meta-form-ajax-wrapper span {
   -webkit-box-sizing: content-box !important;
   box-sizing: content-box !important; }
 
@@ -2708,7 +2714,7 @@ a:focus, input:focus, textarea:focus {
   border-radius: 23px; }
 
 #cboxLoadingOverlay {
-  background: #0175C2;
+  background: transparent;
   -webkit-border-radius: 22px;
   border-radius: 22px; }
 
@@ -3066,8 +3072,12 @@ a:focus, input:focus, textarea:focus {
       .menu_item {
         font-size: 12px;
         padding: 0 8px; } }
+    .menu_item.expanded {
+      margin: 0 !important;
+      padding: 0 10px !important;
+      list-style-type: none !important; }
   .menu_link {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: #fefefe;
     line-height: 2.1;
@@ -3097,6 +3107,14 @@ a:focus, input:focus, textarea:focus {
       border-radius: 2px;
       -webkit-transition: background 0.1s;
       transition: background 0.1s; }
+    .menu_item.expanded .menu_link:after {
+      content: "";
+      position: absolute;
+      right: -4px;
+      top: 14px;
+      width: 11px;
+      height: 7px;
+      background: url("../images/menu-arrow.png"); }
     .menu_item:hover .menu_link:before,
     .menu_item__active .menu_link:before {
       background-color: #f0ad11; }
@@ -4017,7 +4035,7 @@ a:focus, input:focus, textarea:focus {
     line-height: 1.9;
     color: #0c74bd;
     text-decoration: none;
-    border: 2px solid #0c74bd;
+    border: 3px solid #0c74bd;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     position: relative; }
@@ -4120,7 +4138,7 @@ a:focus, input:focus, textarea:focus {
     width: 27%;
     float: left;
     border: none;
-    margin-bottom: 37px;
+    margin-bottom: 13px;
     font-size: 20px;
     line-height: 2.5;
     padding: 0 12px;
@@ -4210,7 +4228,21 @@ a:focus, input:focus, textarea:focus {
     .feedback .form-managed-file .form-submit[name="submitted_file_upload_button"] {
       display: none; }
     .feedback .form-managed-file .form-submit[name="submitted_file_remove_button"] {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      width: 13px;
+      height: 14px;
+      background: url("../images/delete.png");
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      border: none;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding: 0;
+      position: relative;
+      top: 2px; }
   .feedback .webform-component-file {
     margin: 0; }
   .feedback .webform-component-file label {
@@ -4221,6 +4253,8 @@ a:focus, input:focus, textarea:focus {
     line-height: 1.5;
     padding-right: 30px;
     background: url("../images/fileinput.png") 100% 0 no-repeat; }
+    .feedback .webform-component-file label:hover {
+      color: #0C74BD; }
   .feedback .form-file {
     width: 0.1px;
     height: 0.1px;
@@ -4710,11 +4744,11 @@ a:focus, input:focus, textarea:focus {
   .services_body {
     overflow: hidden;
     padding: 10px 0 0 20px;
-    font-size: 12px;
+    font-size: 13px;
     text-align: justify;
     line-height: 1.2; }
     .services_body p {
-      font-size: 12.25px;
+      font-size: 13px;
       text-align: justify;
       line-height: 1.2; }
 
@@ -5308,7 +5342,7 @@ a:focus, input:focus, textarea:focus {
         background: url("../images/list-item.png"); }
 
 .special-detail {
-  padding: 0 0 12px; }
+  padding: 0; }
   .special-detail_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5369,6 +5403,37 @@ a:focus, input:focus, textarea:focus {
     font-family: AvantGardeCTT-Bold, sans-serif;
     font-size: 16px;
     color: #e1a106; }
+  .special-detail footer {
+    text-align: center; }
+  .special-detail_link {
+    border: 3px solid #0c74bd;
+    display: inline-block;
+    padding: 0 25px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background: #0c73bd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0c73bd), to(#0062a8));
+    background: -webkit-linear-gradient(top, #0c73bd 0%, #0062a8 100%);
+    background: linear-gradient(to bottom, #0c73bd 0%, #0062a8 100%);
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.1);
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    color: #fbfdff !important;
+    font-size: 17px;
+    line-height: 1.9;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .special-detail_link:link {
+      color: #fbfdff !important; }
+    .special-detail_link:visited {
+      color: #fbfdff !important; }
+    .special-detail_link:hover {
+      color: #0C74BD !important; }
+    .special-detail_link:active {
+      color: #fbfdff !important; }
+    .special-detail_link:hover {
+      background: transparent;
+      text-decoration: none !important; }
 
 .articles-detail {
   padding: 0 0 12px; }
@@ -5558,7 +5623,7 @@ a:focus, input:focus, textarea:focus {
     .contacts_address p {
       position: relative;
       line-height: 1.1;
-      font-size: 19px; }
+      font-size: 17px; }
       .contacts_address p:before {
         content: "";
         position: absolute;
@@ -5577,7 +5642,7 @@ a:focus, input:focus, textarea:focus {
       margin-bottom: 7px;
       position: relative;
       line-height: 1.1;
-      font-size: 19px; }
+      font-size: 17px; }
       .contacts_work p:before {
         content: "";
         position: absolute;
@@ -5596,7 +5661,8 @@ a:focus, input:focus, textarea:focus {
 
 .location {
   background-color: #0c74bd;
-  color: #f9fbfd; }
+  color: #f9fbfd;
+  min-height: 76px; }
   .location h1 {
     font-size: 14px;
     text-align: center;
@@ -5719,7 +5785,7 @@ a:focus, input:focus, textarea:focus {
 .form-popup {
   width: 765px;
   height: 408px;
-  padding: 45px 0 0;
+  padding: 30px 0 0;
   background: url(../images/form-popup-bac.jpg) no-repeat;
   background-size: cover;
   -webkit-border-radius: 22px;
@@ -5737,7 +5803,8 @@ a:focus, input:focus, textarea:focus {
     font-size: 30px;
     width: 250px;
     margin: 0 auto 11px auto;
-    line-height: 1.2; }
+    line-height: 1.2;
+    text-transform: uppercase; }
   .form-popup_descr {
     padding: 0 60px;
     line-height: 1.2;

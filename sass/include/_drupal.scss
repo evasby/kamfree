@@ -18,6 +18,12 @@
 .drupal-recaptcha > div > div{
   margin: 0 auto;
 }
-#simplemeta-meta-form{
+#simplemeta-meta-form-ajax-wrapper,
+#simplemeta-meta-form-ajax-wrapper div,
+#simplemeta-meta-form-ajax-wrapper form,
+#simplemeta-meta-form-ajax-wrapper label,
+#simplemeta-meta-form-ajax-wrapper input,
+#simplemeta-meta-form-ajax-wrapper textarea,
+#simplemeta-meta-form-ajax-wrapper span{
   box-sizing: content-box !important;
 }

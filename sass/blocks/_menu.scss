@@ -64,9 +64,14 @@
       font-size: 12px;
       padding: 0 8px;
     }
+    &.expanded{
+      margin: 0!important;
+      padding: 0 10px!important;
+      list-style-type: none!important;
+    }
   }
   &_link{
-  	display: inline-block;
+  	display: block;
   	text-decoration: none;
   	@include link(#fefefe, #fefefe);
   	line-height: 2.1;
@@ -84,6 +89,15 @@
       background-color: #0c74bd;
       border-radius: 2px;
       transition: background 0.1s;
+    }
+    .menu_item.expanded &:after{
+      content: "";
+      position: absolute;
+      right: -4px;
+      top: 14px;
+      width: 11px;
+      height: 7px;
+      background: url("../images/menu-arrow.png");
     }
   	.menu_item:hover &,
     .menu_item__active &{

@@ -41,7 +41,7 @@
 		width: 27%;
 		float: left;
 		border: none;
-		margin-bottom: 37px;
+		margin-bottom: 13px;
 		font-size: 20px;
 		line-height: 2.5;
 		padding: 0 12px;
@@ -139,6 +139,18 @@
 		}
 		.form-submit[name="submitted_file_remove_button"]{
 			margin-bottom: 30px;
+			width: 13px;
+			height: 14px;
+			background: url("../images/delete.png");
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			padding: 0;
+			position: relative;
+			top: 2px;
 		}
 	}
 	.webform-component-file{
@@ -152,6 +164,9 @@
     line-height: 1.5;
     padding-right: 30px;
   	background: url('../images/fileinput.png') 100% 0 no-repeat;
+  	&:hover{
+  		color: #0C74BD;
+  	}
 	}
 	.form-file{
 		width: 0.1px;
