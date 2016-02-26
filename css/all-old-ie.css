@@ -4004,6 +4004,7 @@ a:focus, input:focus, textarea:focus {
     position: relative;
     margin-top: -11px;
     padding: 15px 0 38px;
+    height: 115px;
     z-index: 10;
     *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="after" ); }
     .review_body:before {
