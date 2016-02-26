@@ -3072,6 +3072,9 @@ a:focus, input:focus, textarea:focus {
       .menu_item {
         font-size: 12px;
         padding: 0 8px; } }
+    @media all and (max-width: 1023px) {
+      .menu_item__l2 {
+        font-size: 10px; } }
     .menu_item.expanded {
       margin: 0 !important;
       padding: 0 10px !important;
@@ -3115,6 +3118,10 @@ a:focus, input:focus, textarea:focus {
       width: 11px;
       height: 7px;
       background: url("../images/menu-arrow.png"); }
+      @media all and (max-width: 1023px) {
+        .menu_item.expanded .menu_link:after {
+          top: 10px;
+          right: -7px; } }
     .menu_item:hover .menu_link:before,
     .menu_item__active .menu_link:before {
       background-color: #f0ad11; }
@@ -3146,6 +3153,9 @@ a:focus, input:focus, textarea:focus {
         color: #030303; }
       .menu_link__l2:active {
         color: #fefefe; }
+      @media all and (max-width: 1023px) {
+        .menu_link__l2 {
+          padding-left: 18px; } }
       .menu_item__l2:first-child .menu_link__l2 {
         border: none; }
       .menu_link__l2.active {
@@ -5662,7 +5672,7 @@ a:focus, input:focus, textarea:focus {
 .location {
   background-color: #0c74bd;
   color: #f9fbfd;
-  min-height: 76px; }
+  min-height: 66px; }
   .location h1 {
     font-size: 14px;
     text-align: center;

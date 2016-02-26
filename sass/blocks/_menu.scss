@@ -64,6 +64,11 @@
       font-size: 12px;
       padding: 0 8px;
     }
+    &__l2{
+      @include wide{
+        font-size: 10px;
+      }
+    }
     &.expanded{
       margin: 0!important;
       padding: 0 10px!important;
@@ -98,6 +103,10 @@
       width: 11px;
       height: 7px;
       background: url("../images/menu-arrow.png");
+      @include wide{
+        top: 10px;
+        right: -7px;
+      }
     }
   	.menu_item:hover &,
     .menu_item__active &{
@@ -122,6 +131,9 @@
   		display: block;
   		padding-left: 22px;
   		border-top: 1px solid #0b558a;
+      @include wide{
+        padding-left: 18px;
+      }
   		.menu_item__l2:first-child &{
   			border: none;
   		}
