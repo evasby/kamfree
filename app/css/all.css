@@ -195,6 +195,9 @@ h1 {
 b, strong {
   font-family: AvantGardeCTT-Bold, sans-serif; }
 
+em {
+  font-style: italic; }
+
 textarea {
   font-family: AvantGardeCTT-Regular, sans-serif;
   resize: none;

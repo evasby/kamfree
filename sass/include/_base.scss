@@ -60,7 +60,9 @@ h2{
 b, strong{
   font-family: $fontBold;
 }
-
+em{
+  font-style: italic;
+}
 .test{
   //@include span(4 last);
 }
