@@ -2910,11 +2910,12 @@ a:focus, input:focus, textarea:focus {
   padding-top: 3px;
   color: #373736; }
   .phone p {
-    font-size: 20px; }
-    .phone p span {
-      font-family: AvantGardeCTT-Bold, sans-serif;
-      color: #0c74bd;
-      font-size: 24px; }
+    font-size: 20px;
+    /*span{
+			font-family: $fontBold;
+			color: #0c74bd;
+			font-size: 24px;
+		}*/ }
   .phone__footer {
     color: #fefcfc; }
     .phone__footer p span {
@@ -2972,13 +2973,10 @@ a:focus, input:focus, textarea:focus {
   font-size: 13px;
   line-height: 1.2;
   color: #373736; }
-  .address__footer {
-    color: #fefcfc; }
-  .address_time {
-    font-family: AvantGardeCTT-Bold, sans-serif;
+  .address p:first-child {
     margin-bottom: 7px;
     position: relative; }
-    .address_time:before {
+    .address p:first-child:before {
       content: "";
       position: absolute;
       top: 0;
@@ -2986,16 +2984,12 @@ a:focus, input:focus, textarea:focus {
       width: 24px;
       height: 24px;
       background: url("../images/address.png"); }
-    .address_time__footer:before {
-      top: 2px;
-      background-position: 0 48px; }
-    .address_time span {
+    .address p:first-child span {
       font-family: AvantGardeCTT-Regular, sans-serif;
       display: block; }
-  .address_address {
-    font-family: AvantGardeCTT-Bold, sans-serif;
+  .address p:nth-child(2) {
     position: relative; }
-    .address_address:before {
+    .address p:nth-child(2):before {
       content: "";
       position: absolute;
       top: 0px;
@@ -3003,11 +2997,16 @@ a:focus, input:focus, textarea:focus {
       width: 24px;
       height: 24px;
       background: url("../images/address.png") 0 72px; }
-    .address_address__footer:before {
-      background-position: 0 24px; }
-    .address_address span {
+    .address p:nth-child(2) span {
       font-family: AvantGardeCTT-Regular, sans-serif;
       display: block; }
+  .address__footer {
+    color: #fefcfc; }
+    .address__footer p:first-child:before {
+      top: 2px;
+      background-position: 0 48px; }
+    .address__footer p:nth-child(2):before {
+      background-position: 0 24px; }
 
 .menu {
   background-color: #0c74bd; }
