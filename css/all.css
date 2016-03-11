@@ -2803,7 +2803,8 @@ a:focus, input:focus, textarea:focus {
   background-position: -75px -25px; }
 
 .header {
-  padding: 34px 0 34px; }
+  padding: 34px 0 31px;
+  overflow: hidden; }
 
 .headerFixed {
   position: fixed;
@@ -2936,7 +2937,9 @@ a:focus, input:focus, textarea:focus {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3); }
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden; }
     .phone_button:link {
       color: #fefefe; }
     .phone_button:visited {
@@ -2945,11 +2948,30 @@ a:focus, input:focus, textarea:focus {
       color: #fefefe; }
     .phone_button:active {
       color: #fefefe; }
-    .phone_button:hover {
+    .phone_button:before {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-transform: translate(-100%, -100%);
+      -ms-transform: translate(-100%, -100%);
+      transform: translate(-100%, -100%);
       background-color: #0c74bd;
       background: -webkit-gradient(linear, left top, left bottom, from(#4791c6), to(#0b63a1));
       background: -webkit-linear-gradient(top, #4791c6 0%, #0b63a1 100%);
-      background: linear-gradient(to bottom, #4791c6 0%, #0b63a1 100%); }
+      background: linear-gradient(to bottom, #4791c6 0%, #0b63a1 100%);
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+    .phone_button:hover:before {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0); }
     .phone_button__footer {
       background: none;
       background-color: #fefefe;
@@ -2963,8 +2985,11 @@ a:focus, input:focus, textarea:focus {
       .phone_button__footer:active {
         color: #424e5e; }
       .phone_button__footer:hover {
-        background: none;
         background-color: #37414f; }
+      .phone_button__footer:before {
+        /*background: none;
+				background-color: #37414f;*/
+        display: none; }
 
 .address {
   float: right;
@@ -4078,18 +4103,20 @@ a:focus, input:focus, textarea:focus {
     margin-right: 4px;
     background: url("../images/social-mini.png"); }
     .social-mini_link__fb {
-      background-position: 0px 75px; }
+      background-position: 0px 100px; }
     .social-mini_link__tt {
-      background-position: 0px 50px; }
+      background-position: 0px 75px; }
     .social-mini_link__ok {
+      background-position: 0px 50px; }
+    .social-mini_link__gg {
       background-position: 0px 25px; }
 
 .feedback {
   padding: 39px 0 33px;
   background: url("../images/feedback-bac.jpg") 50% 50% no-repeat #f0ad11;
   background-size: cover;
-  -webkit-box-shadow: inset 0 15px 7px -15px rgba(0, 0, 0, 0.2), inset 0 -15px 7px -15px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 15px 7px -15px rgba(0, 0, 0, 0.2), inset 0 -15px 7px -15px rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: inset 0 20px 7px -15px rgba(0, 0, 0, 0.3), inset 0 -20px 7px -15px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 20px 7px -15px rgba(0, 0, 0, 0.3), inset 0 -20px 7px -15px rgba(0, 0, 0, 0.3); }
   .feedback .messages {
     display: none; }
   .feedback h1 {
@@ -4489,7 +4516,7 @@ a:focus, input:focus, textarea:focus {
     width: 22.3%;
     margin-left: 3.6%;
     text-align: left;
-    margin-bottom: 61px; }
+    margin-bottom: 56px; }
     .gallery_item:nth-child(4n-3) {
       margin-left: 0px; }
   .gallery_link {
@@ -4506,7 +4533,8 @@ a:focus, input:focus, textarea:focus {
       display: inline-block;
       text-align: left;
       font-size: 16.7px;
-      line-height: 1.1; }
+      line-height: 1.1;
+      min-height: 40px; }
   .gallery img {
     display: block;
     max-width: 100%;
@@ -4669,7 +4697,8 @@ a:focus, input:focus, textarea:focus {
     float: left;
     width: 48.5%;
     margin-right: 3%;
-    min-height: 146px; }
+    min-height: 170px;
+    margin-bottom: 10px; }
     .services_item:before, .services_item:after {
       content: ".";
       display: block;
@@ -5026,7 +5055,15 @@ a:focus, input:focus, textarea:focus {
         top: 1px;
         width: 17px;
         height: 17px;
-        background: url("../images/news-arrow.png"); }
+        background: url("../images/news-arrow.png");
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s; }
+      .news_link a:hover:after {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
 
 .special {
   padding: 0 0 12px; }
@@ -5111,7 +5148,15 @@ a:focus, input:focus, textarea:focus {
         top: 1px;
         width: 17px;
         height: 17px;
-        background: url("../images/news-arrow.png"); }
+        background: url("../images/news-arrow.png");
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s; }
+      .special_link a:hover:after {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
 
 .articles {
   padding: 0 0 12px; }
@@ -5206,7 +5251,15 @@ a:focus, input:focus, textarea:focus {
         top: 1px;
         width: 17px;
         height: 17px;
-        background: url("../images/news-arrow.png"); }
+        background: url("../images/news-arrow.png");
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s; }
+      .articles_link a:hover:after {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
 
 .another {
   margin-top: 30px; }
@@ -5244,6 +5297,13 @@ a:focus, input:focus, textarea:focus {
 
 .news-detail {
   padding: 0 0 12px; }
+  .news-detail:before, .news-detail:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .news-detail:after {
+    clear: both; }
   .news-detail_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5740,6 +5800,8 @@ a:focus, input:focus, textarea:focus {
   border-radius: 22px;
   overflow: hidden;
   color: #fefefe; }
+  .form-popup__special {
+    background: url(../images/form-popup-special-bac.jpg) no-repeat; }
   .form-popup .messages {
     display: none; }
   .form-popup_wrap {

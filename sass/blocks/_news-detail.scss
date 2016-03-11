@@ -1,5 +1,6 @@
 .news-detail{
 	padding: 0 0 12px;
+	@include clearfix;
 	&_h1{
 		color: #0c74bd;
 		padding: 0 0 14px 8px;

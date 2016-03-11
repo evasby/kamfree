@@ -6,7 +6,7 @@
 		width: 22.3%;
 		margin-left: 3.6%;
 		text-align: left;
-		margin-bottom: 61px;
+		margin-bottom: 56px;
 		&:nth-child(4n-3){
 			margin-left: 0px;
 		}
@@ -19,6 +19,7 @@
 			//font-family: $fontBold;
 			font-size: 16.7px;
 			line-height: 1.1;
+			min-height: 40px;
 		}
 	}
 	img{

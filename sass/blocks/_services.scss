@@ -45,7 +45,8 @@
 		float: left;
 		width: 48.5%;
 		margin-right: 3%;
-		min-height: 146px;
+		min-height: 170px;
+		margin-bottom: 10px;
 		@include clearfix;
 		&:nth-child(2n){
 			margin-right: 0;

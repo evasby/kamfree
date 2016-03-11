@@ -66,6 +66,12 @@
 				width: 17px;
 				height: 17px;
 				background: url('../images/news-arrow.png');
+				transition: transform 0.2s;
+			}
+			&:hover{
+				&:after{
+					transform: rotate(90deg);
+				}
 			}
 		}
 	}

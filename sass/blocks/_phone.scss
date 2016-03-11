@@ -32,17 +32,39 @@
 		text-transform: uppercase;
 		border-radius: 5px;
 		box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
-		&:hover{
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: "";
+			position: absolute;
+			display: block;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+			transform: translate(-100%, -100%);
 			background-color: #0c74bd;
 			background: linear-gradient(to bottom, rgba(71,145,198,1) 0%,rgba(11,99,161,1) 100%);
+			transition: all 0.2s;
+		}
+		&:hover{
+			&:before{	
+				transform: translate(0, 0);
+			}
 		}
 		&__footer{
 			background: none;
 			background-color: #fefefe;
 			@include link(#424e5e, #fefefe);
 			&:hover{
-				background: none;
 				background-color: #37414f;
+			}
+			&:before{
+				/*background: none;
+				background-color: #37414f;*/
+				display: none;
 			}
 		}
 	}
