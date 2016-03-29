@@ -3051,6 +3051,9 @@ a:focus, input:focus, textarea:focus {
       content: '';
       display: inline-block; }
     .menu_list__l2 {
+      -moz-text-align-last: center;
+      text-align-last: center;
+      text-align: center;
       padding: 5px 0;
       background-color: #0c74bd;
       font-family: AvantGardeCTT-Regular, sans-serif;
@@ -3109,6 +3112,7 @@ a:focus, input:focus, textarea:focus {
     border-top: 4px solid #0c74bd;
     border-bottom: 4px solid #0c74bd;
     padding: 0 12px;
+    height: 42px;
     position: relative; }
     .menu_link:link {
       color: #fefefe; }
@@ -3163,7 +3167,7 @@ a:focus, input:focus, textarea:focus {
       text-decoration: none;
       line-height: 2.1;
       display: block;
-      padding-left: 22px;
+      padding: 0 11px;
       border-top: 1px solid #0b558a; }
       .menu_link__l2:link {
         color: #fefefe; }
@@ -4018,7 +4022,7 @@ a:focus, input:focus, textarea:focus {
     border: 3px solid #ebecec;
     position: relative;
     margin-top: -11px;
-    padding: 15px 0 38px;
+    padding: 15px 10px 38px;
     height: 115px; }
     .review_body:before {
       content: "";

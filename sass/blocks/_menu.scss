@@ -21,6 +21,8 @@
 	    display: inline-block;
     }
     &__l2{
+      text-align-last: center;
+      text-align: center;
 			padding: 5px 0;
 			background-color: #0c74bd;
 			font-family: $font;
@@ -83,6 +85,7 @@
   	border-top: 4px solid #0c74bd;
   	border-bottom: 4px solid #0c74bd;
   	padding: 0 12px;
+  	height: 42px;
     position: relative;
     &:before{
       content: '';
@@ -129,7 +132,8 @@
   		text-decoration: none;
   		line-height: 2.1;
   		display: block;
-  		padding-left: 22px;
+      //padding-left: 22px;
+  		padding: 0 11px;
   		border-top: 1px solid #0b558a;
       @include wide{
         padding-left: 18px;
