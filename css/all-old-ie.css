@@ -3129,6 +3129,9 @@ a:focus, input:focus, textarea:focus {
       color: #fefefe; }
     .menu_link:active {
       color: #fefefe; }
+    @media all and (max-width: 1023px) {
+      .menu_link {
+        height: 33px; } }
     .menu_link:before {
       content: '';
       position: absolute;
@@ -3186,7 +3189,7 @@ a:focus, input:focus, textarea:focus {
         color: #fefefe; }
       @media all and (max-width: 1023px) {
         .menu_link__l2 {
-          padding-left: 18px; } }
+          padding-left: 9px; } }
       .menu_item__l2:first-child .menu_link__l2 {
         border: none; }
       .menu_link__l2.active {

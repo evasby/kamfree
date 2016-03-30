@@ -87,6 +87,9 @@
   	padding: 0 12px;
   	height: 42px;
     position: relative;
+    @include wide{
+      height: 33px;
+    }
     &:before{
       content: '';
       position: absolute;
@@ -136,7 +139,7 @@
   		padding: 0 11px;
   		border-top: 1px solid #0b558a;
       @include wide{
-        padding-left: 18px;
+        padding-left: 9px;
       }
   		.menu_item__l2:first-child &{
   			border: none;
