@@ -5420,7 +5420,8 @@ a:focus, input:focus, textarea:focus {
         background: url("../images/list-item.png"); }
 
 .special-detail {
-  padding: 0; }
+  padding: 0;
+  position: relative; }
   .special-detail_h1 {
     color: #0c74bd;
     padding: 0 0 14px 8px;
@@ -5428,20 +5429,18 @@ a:focus, input:focus, textarea:focus {
     border-bottom: 1px solid #eaeaea;
     -webkit-box-shadow: inset 0px -1px 0px 0px #f9f9f9;
     box-shadow: inset 0px -1px 0px 0px #f9f9f9; }
-  .special-detail header {
-    position: relative; }
-    .special-detail header img {
-      float: left;
-      margin: 0 46px 34px 0;
-      -webkit-border-radius: 7px;
-      border-radius: 7px;
-      -webkit-box-shadow: -1px 0px 7px 0px rgba(0, 0, 0, 0.35);
-      box-shadow: -1px 0px 7px 0px rgba(0, 0, 0, 0.35); }
+  .special-detail header img {
+    float: left;
+    margin: 0 46px 34px 0;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-box-shadow: -1px 0px 7px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 0px 7px 0px rgba(0, 0, 0, 0.35); }
   .special-detail h2 {
     font-family: AvantGardeCTT-Bold, sans-serif;
     font-size: 16.7px;
     color: #0c74bd;
-    margin: 43px 0 11px; }
+    margin: 0px 0 11px; }
   .special-detail a {
     font-family: AvantGardeCTT-Bold, sans-serif;
     color: #0c74bd;

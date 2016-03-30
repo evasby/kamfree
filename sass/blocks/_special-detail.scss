@@ -1,5 +1,6 @@
 .special-detail{
 	padding: 0;
+	position: relative;
 	&_h1{
 		color: #0c74bd;
 		padding: 0 0 14px 8px;
@@ -8,7 +9,6 @@
 		box-shadow: inset 0px -1px 0px 0px rgba(249,249,249,1);
 	}
 	header{
-		position: relative;
 	 	img{
 			float: left;
 			margin: 0 46px 34px 0;
@@ -20,7 +20,7 @@
 		font-family: $fontBold;
 		font-size: 16.7px;
 		color: #0c74bd;
-		margin: 43px 0 11px;
+		margin: 0px 0 11px;
 	}
 	a{
 		font-family: $fontBold;
