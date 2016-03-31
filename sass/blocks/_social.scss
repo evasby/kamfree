@@ -1,19 +1,26 @@
 .social{
 	background-color: #37414f;
-	text-align: center;
-	padding: 14px 0 32px;
+	padding: 14px 0 32px;	
+	&_inner{
+		width: 420px;
+		margin: 0 auto;
+		@include clearfix;
+	}
 	h1{
-		display: inline-block;
+		//display: inline-block;
+		float: left;
 		color: #fefefe;
 		font-family: $fontBold;
 		font-size: 22px;
 		text-transform: uppercase;
 		margin-right: 20px;
+		padding-top: 14px;
 	}
 	&_list{
-		display: inline-block;
+		//display: inline-block;
 	}
 	&_item{
+		float: left;
 		display: inline-block;
 	}
 	&_link{

@@ -4420,6 +4420,20 @@ a:focus, input:focus, textarea:focus {
       font-family: AvantGardeCTT-Bold, sans-serif;
       font-size: 16.7px;
       color: #0c74bd; }
+  @media all and (max-width: 1023px) {
+    .article .colorbox-insert-image {
+      float: left;
+      width: 28%;
+      margin-left: 8%; }
+      .article .colorbox-insert-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto; }
+    .article p .colorbox-insert-image:first-child {
+      margin-left: 0; }
+    .article p .colorbox-insert-image img {
+      margin: 0 !important; } }
 
 .mypager {
   text-align: center;
@@ -5810,18 +5824,28 @@ a:focus, input:focus, textarea:focus {
 
 .social {
   background-color: #37414f;
-  text-align: center;
   padding: 14px 0 32px; }
+  .social_inner {
+    width: 420px;
+    margin: 0 auto;
+    *zoom: 1; }
+    .social_inner:before, .social_inner:after {
+      content: ".";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .social_inner:after {
+      clear: both; }
   .social h1 {
-    display: inline-block;
+    float: left;
     color: #fefefe;
     font-family: AvantGardeCTT-Bold, sans-serif;
     font-size: 22px;
     text-transform: uppercase;
-    margin-right: 20px; }
-  .social_list {
-    display: inline-block; }
+    margin-right: 20px;
+    padding-top: 14px; }
   .social_item {
+    float: left;
     display: inline-block; }
   .social_link {
     text-indent: 100%;

@@ -66,4 +66,27 @@
 			color: #0c74bd;
 		}
 	}
+	@include wide{
+		.colorbox-insert-image{
+			float: left;
+			width: 28%;
+			margin-left: 8%;
+			img{
+				display: block;
+				width: 100%;
+				height: auto;
+				margin: 0 auto;
+			}
+		}
+		p{
+			.colorbox-insert-image{
+				&:first-child{
+					margin-left: 0;
+				}
+				img{
+					margin: 0 !important;
+				}
+			}
+		}
+	}
 }
