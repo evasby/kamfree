@@ -3229,10 +3229,13 @@ a:focus, input:focus, textarea:focus {
     -webkit-border-radius: 17px;
     border-radius: 17px;
     overflow: hidden; }
-  .slider .lSSlideOuter {
+  .slider_wrap {
     overflow: hidden;
     -webkit-border-radius: 17px;
     border-radius: 17px;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); }
+  .slider .lSSlideOuter {
+    overflow: hidden;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
