@@ -5,10 +5,15 @@
 		position: relative;
 		max-width: $maxWidth + 238;
 	}
-	h1{
+	&_h{
 		color: #0c74bd;
 		margin-bottom: 57px;
+		font-family: $fontBold;
+	  font-size: 28px;
+	  text-transform: uppercase;
 		span{
+			padding-bottom: 5px;
+   		position: relative;
 			&:before{
 	      content: '';
 	      position: absolute;

@@ -10,10 +10,15 @@
 	& .messages{
 		display: none;
 	}
-	h1{
+	&_h{
 		color: #fcfdfe;
 		margin-bottom: 72px;
+		font-family: $fontBold;
+	  font-size: 28px;
+	  text-transform: uppercase;
 		span{
+			padding-bottom: 5px;
+    	position: relative;
 			&:before{
 	      content: '';
 	      position: absolute;

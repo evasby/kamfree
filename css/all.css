@@ -3605,18 +3605,24 @@ a:focus, input:focus, textarea:focus {
   @media all and (max-width: 1023px) {
     .why {
       font-size: 14px; } }
-  .why h1 {
-    color: #fffefe; }
-    .why h1 span:before {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: #f0ad11;
-      -webkit-border-radius: 2px;
-      border-radius: 2px; }
+  .why_h {
+    color: #fffefe;
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    font-size: 28px;
+    text-transform: uppercase; }
+    .why_h span {
+      padding-bottom: 5px;
+      position: relative; }
+      .why_h span:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #f0ad11;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
   .why_list {
     padding-top: 31px; }
     .why_list:before, .why_list:after {
@@ -3671,19 +3677,25 @@ a:focus, input:focus, textarea:focus {
     margin: 0 auto;
     position: relative;
     max-width: 1262px; }
-  .reviews h1 {
+  .reviews_h {
     color: #0c74bd;
-    margin-bottom: 57px; }
-    .reviews h1 span:before {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: #f0ad11;
-      -webkit-border-radius: 2px;
-      border-radius: 2px; }
+    margin-bottom: 57px;
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    font-size: 28px;
+    text-transform: uppercase; }
+    .reviews_h span {
+      padding-bottom: 5px;
+      position: relative; }
+      .reviews_h span:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #f0ad11;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
   .reviews_list {
     max-height: 297px;
     overflow: hidden; }
@@ -4006,7 +4018,7 @@ a:focus, input:focus, textarea:focus {
 
 .review {
   text-align: center; }
-  .review header img {
+  .review_header img {
     display: block;
     margin: 0 auto;
     -webkit-border-radius: 50%;
@@ -4016,11 +4028,13 @@ a:focus, input:focus, textarea:focus {
     display: inline-block;
     background-color: #fff;
     font-family: AvantGardeCTT-Bold, sans-serif;
-    font-size: 21.7px;
-    color: #0c74bd;
+    font-size: 21.7px !important;
+    color: #0c74bd !important;
     position: relative;
     z-index: 15;
-    padding: 0 20px; }
+    padding: 0 20px;
+    margin-bottom: 0 !important;
+    text-transform: none !important; }
   .review_body {
     font-family: AvantGardeCTT-Bold, sans-serif;
     font-size: 14.3px;
@@ -4052,7 +4066,7 @@ a:focus, input:focus, textarea:focus {
       width: 40px;
       height: 3px;
       background-color: #ebecec; }
-  .review footer {
+  .review_footer {
     position: relative;
     z-index: 15;
     margin-top: -19px; }
@@ -4131,19 +4145,25 @@ a:focus, input:focus, textarea:focus {
   box-shadow: inset 0 20px 7px -15px rgba(0, 0, 0, 0.3), inset 0 -20px 7px -15px rgba(0, 0, 0, 0.3); }
   .feedback .messages {
     display: none; }
-  .feedback h1 {
+  .feedback_h {
     color: #fcfdfe;
-    margin-bottom: 72px; }
-    .feedback h1 span:before {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: #0c74bd;
-      -webkit-border-radius: 2px;
-      border-radius: 2px; }
+    margin-bottom: 72px;
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    font-size: 28px;
+    text-transform: uppercase; }
+    .feedback_h span {
+      padding-bottom: 5px;
+      position: relative; }
+      .feedback_h span:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #0c74bd;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
   .feedback_inner:before, .feedback_inner:after {
     content: ".";
     display: block;
@@ -5775,7 +5795,7 @@ a:focus, input:focus, textarea:focus {
       overflow: hidden; }
     .social_inner:after {
       clear: both; }
-  .social h1 {
+  .social h2 {
     float: left;
     color: #fefefe;
     font-family: AvantGardeCTT-Bold, sans-serif;

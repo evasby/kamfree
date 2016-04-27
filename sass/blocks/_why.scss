@@ -11,9 +11,14 @@
 	@include wide{
     font-size: 14px;
   }
-	h1{
+	&_h{
 		color: #fffefe;
+		font-family: $fontBold;
+	  font-size: 28px;
+	  text-transform: uppercase;
 		span{
+			padding-bottom: 5px;
+    	position: relative;
 			&:before{
 	      content: '';
 	      position: absolute;

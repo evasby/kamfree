@@ -1,6 +1,6 @@
 .review{
 	text-align: center;
-	header{
+	&_header{
 		img{
 			display: block;
 			margin: 0 auto;
@@ -12,11 +12,13 @@
 		display: inline-block;
 		background-color: #fff;
 		font-family: $fontBold;
-		font-size: 21.7px;
-		color: #0c74bd;
+		font-size: 21.7px!important;
+		color: #0c74bd!important;
 		position: relative;
 		z-index: 15;
 		padding: 0 20px;
+		margin-bottom: 0!important;
+		text-transform: none!important;
 	}
 	&_body{
 		font-family: $fontBold;
@@ -71,7 +73,7 @@
 	    }
 	  }
 	}
-	footer{
+	&_footer{
 		position: relative;
 		z-index: 15;
 		margin-top: -19px;
