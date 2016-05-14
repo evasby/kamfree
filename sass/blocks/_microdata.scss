@@ -1,0 +1,16 @@
+.microdata{
+	background-color: #37414f;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	a{
+		font-size: 12px;
+		@include link(#fff, #fff);
+	}
+	&_bread{
+		padding: 0 0 5px 0;
+	}
+	&_review{
+		padding: 0 0 5px 0;
+	}
+}

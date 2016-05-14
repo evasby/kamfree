@@ -5850,10 +5850,11 @@ a:focus, input:focus, textarea:focus {
 
 .social {
   background-color: #37414f;
-  padding: 14px 0 32px; }
+  padding: 14px 0 20px; }
   .social_inner {
     width: 420px;
     margin: 0 auto;
+    padding-left: 18px;
     *zoom: 1; }
     .social_inner:before, .social_inner:after {
       content: ".";
@@ -6021,3 +6022,24 @@ a:focus, input:focus, textarea:focus {
     color: #434242;
     font-size: 16px;
     opacity: 1; }
+
+.microdata {
+  background-color: #37414f;
+  text-align: center;
+  color: #fff;
+  font-size: 12px; }
+  .microdata a {
+    font-size: 12px;
+    color: #fff; }
+    .microdata a:link {
+      color: #fff; }
+    .microdata a:visited {
+      color: #fff; }
+    .microdata a:hover {
+      color: #fff; }
+    .microdata a:active {
+      color: #fff; }
+  .microdata_bread {
+    padding: 0 0 5px 0; }
+  .microdata_review {
+    padding: 0 0 5px 0; }

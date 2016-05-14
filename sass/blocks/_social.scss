@@ -1,9 +1,10 @@
 .social{
 	background-color: #37414f;
-	padding: 14px 0 32px;	
+	padding: 14px 0 20px;	
 	&_inner{
 		width: 420px;
 		margin: 0 auto;
+		padding-left: 18px;
 		@include clearfix;
 	}
 	h2{
